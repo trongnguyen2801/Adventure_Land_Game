@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "82a3f0e8-8786-47e8-b612-2a14080e53d3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 2400,
+  "height": 634,
+  "platformSettings": {},
+  "subMetas": {
+    "dialog-box-video-game-dialogue-clip-art-game-box-96ea4b91d40fda4a74e9d978ca313680": {
+      "ver": "1.0.6",
+      "uuid": "3013e808-93ad-400a-9acb-ac853dbbf931",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "82a3f0e8-8786-47e8-b612-2a14080e53d3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 11,
+      "offsetY": -0.5,
+      "trimX": 43,
+      "trimY": 38,
+      "width": 2336,
+      "height": 559,
+      "rawWidth": 2400,
+      "rawHeight": 634,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

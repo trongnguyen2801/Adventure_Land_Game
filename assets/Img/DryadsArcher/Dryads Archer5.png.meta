@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8eca37a0-be21-40a8-aa04-911ffab19f11",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 296,
+  "height": 371,
+  "platformSettings": {},
+  "subMetas": {
+    "Dryads Archer5": {
+      "ver": "1.0.6",
+      "uuid": "4e31e97b-9833-4b0c-a74f-60f8bce85e4f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8eca37a0-be21-40a8-aa04-911ffab19f11",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 296,
+      "height": 371,
+      "rawWidth": 296,
+      "rawHeight": 371,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

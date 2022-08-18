@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "acce51dc-6fb9-4635-a87f-268eba6f712a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 512,
+  "platformSettings": {},
+  "subMetas": {
+    "Ball of ice": {
+      "ver": "1.0.6",
+      "uuid": "1869b754-b7d0-49eb-b611-04744361c2df",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "acce51dc-6fb9-4635-a87f-268eba6f712a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -2,
+      "trimX": 44,
+      "trimY": 50,
+      "width": 38,
+      "height": 416,
+      "rawWidth": 128,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

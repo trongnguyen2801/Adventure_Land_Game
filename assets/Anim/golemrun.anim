@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "golemrun",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.84,
+  "sample": 25,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "25f6b31f-7aa8-4d59-9534-d152a27a61cb"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "89ae6a29-1aa1-4d53-8f02-1ba4c1a5af23"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "ec82a12b-f085-4748-817e-3cda3839a0da"
+            }
+          },
+          {
+            "frame": 0.6,
+            "value": {
+              "__uuid__": "89ae6a29-1aa1-4d53-8f02-1ba4c1a5af23"
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__uuid__": "25f6b31f-7aa8-4d59-9534-d152a27a61cb"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

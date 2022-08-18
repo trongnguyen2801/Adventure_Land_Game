@@ -1,0 +1,67 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "dragonchildrun",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "7b0fe53b-ff20-4526-8038-fd36369cd6c1"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "a715919d-e55c-4d08-b8fa-7e321dc5bde5"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "38c5d724-bbf2-4f99-b976-b1a2f9d570fb"
+            }
+          },
+          {
+            "frame": 0.36666666666666664,
+            "value": {
+              "__uuid__": "13ab00ff-0174-4b20-ac62-28e86eb76027"
+            }
+          },
+          {
+            "frame": 0.48333333333333334,
+            "value": {
+              "__uuid__": "7b0fe53b-ff20-4526-8038-fd36369cd6c1"
+            }
+          },
+          {
+            "frame": 0.6166666666666667,
+            "value": {
+              "__uuid__": "a715919d-e55c-4d08-b8fa-7e321dc5bde5"
+            }
+          },
+          {
+            "frame": 0.7333333333333333,
+            "value": {
+              "__uuid__": "38c5d724-bbf2-4f99-b976-b1a2f9d570fb"
+            }
+          },
+          {
+            "frame": 0.85,
+            "value": {
+              "__uuid__": "13ab00ff-0174-4b20-ac62-28e86eb76027"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

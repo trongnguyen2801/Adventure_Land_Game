@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "11757090-c132-4bd0-ab87-cf6988343265",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Crouch0002": {
+      "ver": "1.0.6",
+      "uuid": "d9bd2311-9664-4bfb-9791-14f64ee7346f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "11757090-c132-4bd0-ab87-cf6988343265",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -33.5,
+      "offsetY": -78,
+      "trimX": 236,
+      "trimY": 394,
+      "width": 361,
+      "height": 268,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

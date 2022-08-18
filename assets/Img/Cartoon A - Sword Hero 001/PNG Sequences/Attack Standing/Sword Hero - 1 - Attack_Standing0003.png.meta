@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "304cf656-b219-4c9b-bceb-0cee22cce6d0",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Attack_Standing0003": {
+      "ver": "1.0.6",
+      "uuid": "65957ce7-e58b-458b-9ef5-67a43bd02147",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "304cf656-b219-4c9b-bceb-0cee22cce6d0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -5.5,
+      "offsetY": -29,
+      "trimX": 253,
+      "trimY": 299,
+      "width": 383,
+      "height": 360,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "efc96063-d147-42f9-bbbb-8672ea50f51c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 768,
+  "height": 48,
+  "platformSettings": {},
+  "subMetas": {
+    "Projectile 2 w blur": {
+      "ver": "1.0.6",
+      "uuid": "7993d042-cb3b-4648-b535-3741661e4889",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "efc96063-d147-42f9-bbbb-8672ea50f51c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 10.5,
+      "offsetY": -0.5,
+      "trimX": 22,
+      "trimY": 2,
+      "width": 745,
+      "height": 45,
+      "rawWidth": 768,
+      "rawHeight": 48,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

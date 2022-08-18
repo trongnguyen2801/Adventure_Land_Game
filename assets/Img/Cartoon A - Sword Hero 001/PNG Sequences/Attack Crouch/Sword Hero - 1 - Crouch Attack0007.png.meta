@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2378a48c-d142-4014-87b9-48a1119d7e11",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Crouch Attack0007": {
+      "ver": "1.0.6",
+      "uuid": "42a50f04-3d0b-479b-9a29-0ef7886e300a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2378a48c-d142-4014-87b9-48a1119d7e11",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -70,
+      "offsetY": -68.5,
+      "trimX": 112,
+      "trimY": 376,
+      "width": 536,
+      "height": 285,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

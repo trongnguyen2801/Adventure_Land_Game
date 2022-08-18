@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d196e33e-f210-40b8-be57-8f8bc61188ac",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 288,
+  "height": 64,
+  "platformSettings": {},
+  "subMetas": {
+    "Earth projectile Spritesheet ": {
+      "ver": "1.0.6",
+      "uuid": "361101e7-3712-44a0-8364-39901646fb43",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d196e33e-f210-40b8-be57-8f8bc61188ac",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -13,
+      "offsetY": -4,
+      "trimX": 1,
+      "trimY": 11,
+      "width": 260,
+      "height": 50,
+      "rawWidth": 288,
+      "rawHeight": 64,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

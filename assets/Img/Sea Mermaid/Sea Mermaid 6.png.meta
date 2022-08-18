@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d342b3dc-6cc1-49c7-9db4-386f140b332d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 216,
+  "height": 196,
+  "platformSettings": {},
+  "subMetas": {
+    "Sea Mermaid 6": {
+      "ver": "1.0.6",
+      "uuid": "093598f5-3142-4146-ba54-7baddb0eb951",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d342b3dc-6cc1-49c7-9db4-386f140b332d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 216,
+      "height": 196,
+      "rawWidth": 216,
+      "rawHeight": 196,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

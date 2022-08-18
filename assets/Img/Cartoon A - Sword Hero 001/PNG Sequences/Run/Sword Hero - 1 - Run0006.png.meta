@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3a2f9a24-58b7-4b04-aa8d-166d9ae46107",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Run0006": {
+      "ver": "1.0.6",
+      "uuid": "7638b025-fedc-44d5-b35f-4b46566cd854",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3a2f9a24-58b7-4b04-aa8d-166d9ae46107",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -19,
+      "offsetY": -5.5,
+      "trimX": 247,
+      "trimY": 298,
+      "width": 368,
+      "height": 315,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

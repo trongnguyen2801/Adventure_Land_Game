@@ -1,0 +1,61 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ventosat",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "13d7b405-0cad-48af-917b-acb012c0c033"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "4d1f0bd2-3c91-4043-b8a5-b53a2dabd2c7"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "5df11cd2-ff8d-41ed-95ca-d366aa377219"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "5ab72714-56de-4fe5-83c7-b3d8ea6612d9"
+            }
+          },
+          {
+            "frame": 0.38333333333333336,
+            "value": {
+              "__uuid__": "6242a7d7-4209-482d-a918-ac3ade8146ad"
+            }
+          },
+          {
+            "frame": 0.5166666666666667,
+            "value": {
+              "__uuid__": "5ab72714-56de-4fe5-83c7-b3d8ea6612d9"
+            }
+          },
+          {
+            "frame": 0.5833333333333334,
+            "value": {
+              "__uuid__": "826739a5-101c-4879-b67e-f843c0dbdce3"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

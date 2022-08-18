@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1abd060b-6ed5-4e77-9641-0a73e74d6f5b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Land0005": {
+      "ver": "1.0.6",
+      "uuid": "91767f10-d216-41d0-a921-d34e572b84fd",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1abd060b-6ed5-4e77-9641-0a73e74d6f5b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7.5,
+      "offsetY": -40,
+      "trimX": 249,
+      "trimY": 321,
+      "width": 387,
+      "height": 338,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

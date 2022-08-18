@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e18cb3d2-16a1-447c-b274-07bd16b342d7",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Jump0003": {
+      "ver": "1.0.6",
+      "uuid": "04baf515-cdc5-4765-a894-f10fea41bf7f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e18cb3d2-16a1-447c-b274-07bd16b342d7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -19,
+      "offsetY": 124.5,
+      "trimX": 250,
+      "trimY": 189,
+      "width": 362,
+      "height": 273,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

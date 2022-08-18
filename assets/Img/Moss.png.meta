@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "af96334b-246b-4be6-bf65-713866b72f4e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "Moss": {
+      "ver": "1.0.6",
+      "uuid": "ab0d5710-6ac9-4f3d-9248-3e3b9fdb2a7d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "af96334b-246b-4be6-bf65-713866b72f4e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

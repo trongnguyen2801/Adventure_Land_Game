@@ -1,0 +1,67 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "swheroatstand",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5833333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "a06462e5-a4da-4ba8-92e5-c66bcbc9d5dd"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "93193a30-c642-4ec3-8ba1-f27cf947aa40"
+            }
+          },
+          {
+            "frame": 0.15,
+            "value": {
+              "__uuid__": "65957ce7-e58b-458b-9ef5-67a43bd02147"
+            }
+          },
+          {
+            "frame": 0.23333333333333334,
+            "value": {
+              "__uuid__": "0d967d07-e7f8-423b-b9c5-44f359e27e7e"
+            }
+          },
+          {
+            "frame": 0.31666666666666665,
+            "value": {
+              "__uuid__": "3d0fc07a-0bf5-4cb2-aa5f-768e628ac41a"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "55593eb0-0230-4441-89c0-e7e14b6f6085"
+            }
+          },
+          {
+            "frame": 0.48333333333333334,
+            "value": {
+              "__uuid__": "a33d6570-1d56-4b88-874a-0b27d3f4aa63"
+            }
+          },
+          {
+            "frame": 0.5666666666666667,
+            "value": {
+              "__uuid__": "a06462e5-a4da-4ba8-92e5-c66bcbc9d5dd"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

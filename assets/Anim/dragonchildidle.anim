@@ -1,0 +1,61 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "dragonchildidle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "010ac684-fdb0-4d32-b5c8-71c6d8b4770c"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "544b2bce-c80d-469b-bd7b-82eab1a5a8c7"
+            }
+          },
+          {
+            "frame": 0.36666666666666664,
+            "value": {
+              "__uuid__": "5f05c79c-5b4d-42bc-b0ea-d78fc31fd1ce"
+            }
+          },
+          {
+            "frame": 0.5333333333333333,
+            "value": {
+              "__uuid__": "010ac684-fdb0-4d32-b5c8-71c6d8b4770c"
+            }
+          },
+          {
+            "frame": 0.7,
+            "value": {
+              "__uuid__": "544b2bce-c80d-469b-bd7b-82eab1a5a8c7"
+            }
+          },
+          {
+            "frame": 0.8666666666666667,
+            "value": {
+              "__uuid__": "5f05c79c-5b4d-42bc-b0ea-d78fc31fd1ce"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "010ac684-fdb0-4d32-b5c8-71c6d8b4770c"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

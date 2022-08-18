@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "archerat",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.025,
+  "sample": 40,
+  "speed": 1,
+  "wrapMode": 0,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "8fe07eef-df39-497b-8771-7ca6cd4c9678"
+            }
+          },
+          {
+            "frame": 0.225,
+            "value": {
+              "__uuid__": "8c730d4b-ca90-4bd8-8ece-0f686d46eb47"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "b3cef6df-e174-492a-8ffb-85ce960dd577"
+            }
+          },
+          {
+            "frame": 0.625,
+            "value": {
+              "__uuid__": "4e31e97b-9833-4b0c-a74f-60f8bce85e4f"
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__uuid__": "99ec1efa-7274-4e09-94ea-28bdfaaad3d5"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "8fe07eef-df39-497b-8771-7ca6cd4c9678"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

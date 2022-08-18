@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d2ed1dd1-00a3-4e05-8bc1-09b9faf97c1b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Crouch End0002": {
+      "ver": "1.0.6",
+      "uuid": "17830084-acc5-4b64-9889-dbdde1036c2d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d2ed1dd1-00a3-4e05-8bc1-09b9faf97c1b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7.5,
+      "offsetY": -37,
+      "trimX": 249,
+      "trimY": 315,
+      "width": 387,
+      "height": 344,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

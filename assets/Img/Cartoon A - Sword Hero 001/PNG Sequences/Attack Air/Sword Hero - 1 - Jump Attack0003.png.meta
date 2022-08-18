@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "06005c2e-8e78-4c52-bf5c-bcf773385e6c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Jump Attack0003": {
+      "ver": "1.0.6",
+      "uuid": "4a91ddb1-9724-4fca-a14d-222a2d305665",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "06005c2e-8e78-4c52-bf5c-bcf773385e6c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -18,
+      "offsetY": 124.5,
+      "trimX": 253,
+      "trimY": 179,
+      "width": 358,
+      "height": 293,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

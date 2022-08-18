@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "09027434-d7ff-42f0-ab85-909cb9fcee04",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 296,
+  "height": 371,
+  "platformSettings": {},
+  "subMetas": {
+    "Dryads Archeidler": {
+      "ver": "1.0.6",
+      "uuid": "48fb8d6e-00a5-495b-8f51-95a1bee6bfaf",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "09027434-d7ff-42f0-ab85-909cb9fcee04",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 296,
+      "height": 371,
+      "rawWidth": 296,
+      "rawHeight": 371,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

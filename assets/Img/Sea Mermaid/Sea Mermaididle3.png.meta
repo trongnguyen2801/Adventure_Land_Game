@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "cec95c8e-a7a1-4630-bd0d-8297c346e316",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 250,
+  "height": 250,
+  "platformSettings": {},
+  "subMetas": {
+    "Sea Mermaididle3": {
+      "ver": "1.0.6",
+      "uuid": "b4b348b2-b25e-42b3-b5c8-9955dbc34e93",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "cec95c8e-a7a1-4630-bd0d-8297c346e316",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 13,
+      "trimY": 29,
+      "width": 225,
+      "height": 192,
+      "rawWidth": 250,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

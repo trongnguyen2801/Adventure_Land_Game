@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "mermaididle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.3333333333333333,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "5d001832-717d-43e9-b794-700ebac60cf6"
+            }
+          },
+          {
+            "frame": 0.26666666666666666,
+            "value": {
+              "__uuid__": "2bc15142-1d0f-4f75-bd5b-aa448ce192ee"
+            }
+          },
+          {
+            "frame": 0.5666666666666667,
+            "value": {
+              "__uuid__": "14ea354d-6fed-4444-8b8f-dbfb62094ebd"
+            }
+          },
+          {
+            "frame": 0.8333333333333334,
+            "value": {
+              "__uuid__": "b4b348b2-b25e-42b3-b5c8-9955dbc34e93"
+            }
+          },
+          {
+            "frame": 1.0666666666666667,
+            "value": {
+              "__uuid__": "14ea354d-6fed-4444-8b8f-dbfb62094ebd"
+            }
+          },
+          {
+            "frame": 1.3,
+            "value": {
+              "__uuid__": "2bc15142-1d0f-4f75-bd5b-aa448ce192ee"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

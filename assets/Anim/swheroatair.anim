@@ -1,0 +1,61 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "swheroatair",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.36666666666666664,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "cae18644-6ea3-4d23-9d36-d29233b656a9"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "54c5362f-b0db-425c-b87b-f78f4bfc0d50"
+            }
+          },
+          {
+            "frame": 0.11666666666666667,
+            "value": {
+              "__uuid__": "4a91ddb1-9724-4fca-a14d-222a2d305665"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "053d81c1-a07d-4823-a792-f3a2152f9722"
+            }
+          },
+          {
+            "frame": 0.23333333333333334,
+            "value": {
+              "__uuid__": "3f25d46b-2d62-4b77-9447-7e231019e951"
+            }
+          },
+          {
+            "frame": 0.2833333333333333,
+            "value": {
+              "__uuid__": "f2aa371f-b253-4161-a786-bf576024904e"
+            }
+          },
+          {
+            "frame": 0.35,
+            "value": {
+              "__uuid__": "02843dda-74ad-43be-85c7-f6f1f5a2e045"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "teleportout",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.15,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "15a7e7ac-34aa-4c18-bd4c-5a31b816e087"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "e3905861-3b0d-4f9a-8a63-190dc3764c6b"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "3d6ae144-d5d7-40de-80ff-ea39a5fd3e11"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "17f539cf-0817-4f35-b7d9-a0ee36db8d8e"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "0f8d2b31-d645-497b-ae69-8c6ef4ef79fa"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

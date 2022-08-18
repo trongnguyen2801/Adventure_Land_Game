@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1ec164a4-caa9-417c-a409-f1e0523d3c76",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Idle0007": {
+      "ver": "1.0.6",
+      "uuid": "9ee6b803-7097-49c8-be48-0d55013fc342",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1ec164a4-caa9-417c-a409-f1e0523d3c76",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7.5,
+      "offsetY": -36,
+      "trimX": 249,
+      "trimY": 313,
+      "width": 387,
+      "height": 346,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

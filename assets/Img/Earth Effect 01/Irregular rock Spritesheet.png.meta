@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a124bc32-544d-45f5-a371-e5be1dca20c5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 288,
+  "height": 96,
+  "platformSettings": {},
+  "subMetas": {
+    "Irregular rock Spritesheet": {
+      "ver": "1.0.6",
+      "uuid": "6a3d733d-51ee-46bc-8f6d-796d65328e48",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a124bc32-544d-45f5-a371-e5be1dca20c5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -6.5,
+      "offsetY": 1,
+      "trimX": 0,
+      "trimY": 4,
+      "width": 275,
+      "height": 86,
+      "rawWidth": 288,
+      "rawHeight": 96,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ad6c3f45-8677-4ff4-9ff4-0a61650974bd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Hurt0005": {
+      "ver": "1.0.6",
+      "uuid": "5bd71e7d-dac8-41cc-bb9b-3e40e978401d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ad6c3f45-8677-4ff4-9ff4-0a61650974bd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -25.5,
+      "offsetY": -30.5,
+      "trimX": 256,
+      "trimY": 310,
+      "width": 337,
+      "height": 341,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a8d4b247-5a38-45f4-a81a-814beb638709",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 896,
+  "platformSettings": {},
+  "subMetas": {
+    "Burst of ice": {
+      "ver": "1.0.6",
+      "uuid": "004d76d5-6fbc-4428-a821-393025098e4b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a8d4b247-5a38-45f4-a81a-814beb638709",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 48,
+      "trimX": 24,
+      "trimY": 50,
+      "width": 82,
+      "height": 700,
+      "rawWidth": 128,
+      "rawHeight": 896,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "29dabb57-6b88-4149-bf06-c6063c4ba822",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "Sword Hero - 1 - Fall0005": {
+      "ver": "1.0.6",
+      "uuid": "81baafc6-bbc2-48b6-896c-10b2527fba4a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "29dabb57-6b88-4149-bf06-c6063c4ba822",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -23.5,
+      "offsetY": 80,
+      "trimX": 250,
+      "trimY": 183,
+      "width": 353,
+      "height": 374,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
