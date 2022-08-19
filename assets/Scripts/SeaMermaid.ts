@@ -32,6 +32,7 @@ export default class SeaMermaid extends cc.Component {
             let _pos = this.node.getPosition();
             ship_prefab.setPosition(_pos.x + 350,_pos.y + 250);
         },1)
+        
         this.scheduleOnce(function(){
             this.anim.play('mermaididle');
         },2)

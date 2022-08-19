@@ -1,8 +1,37 @@
 const Input = {};
-const State = {
-    stand: 1,
-    attack: 2,
-};
+
+export enum State{
+    STAND = 1,
+    ATTACK = 2,
+}
+
+export enum AttackState{
+    NONE = 0, 
+    KTHUNDER = 1, 
+    LTHUNDER = 2,
+}
+
+export enum AnimationState{
+    IDLE = 'idle',
+    RUN = 'plrun',
+    TELEIN = 'teleport',
+    TELEOUT = 'teleportout',
+    ATTACK = 'att',
+    DEAD = 'pldead',
+    HIT = 'plhit',
+}
+
+export enum CheckpointTag{
+    FIREBALLLEFT = 1,
+    FIREBALLRIGHT = 2,
+    ENEMYGREEN = 3,
+    DRYADSARROWLEFT = 4,
+    DRYADSARROWRIGHT = 5,
+    SEAMERMAID = 6,
+    SLIMEATTACK = 7,
+    LEAFENATTACKLEFT = 8,
+    BALLFIRE = 10,
+}
 
 import DragonChild from "./DragonChild";
 import EnemyGreen from "./EnemyObGreen";
@@ -18,6 +47,7 @@ export default class Player2 extends cc.Component {
 
     _speed: number = 0;
     charState: number;
+    attackState: number;
     on_the_ground: boolean;
     anim: string;
     jump_force: number;
@@ -77,6 +107,7 @@ export default class Player2 extends cc.Component {
         this.leafen = cc.find("Canvas/scene02/leafen").getComponent(Leafen);
 
         //active debugDrawPhysics
+
         physics.enabled = true;
         physics.debugDrawFlags = 1;
 
@@ -91,7 +122,8 @@ export default class Player2 extends cc.Component {
         this.sp = cc.v2(0,0);
         this.hp = 4;
 
-        this.charState = State.stand;
+        this.charState = State.STAND;
+        this.attackState = AttackState.NONE;
         this.heroAni.on('finished',this.onAnimationFinished,this);
 
         cc.systemEvent.on('keydown',this.onKeyDown,this);
@@ -114,15 +146,16 @@ export default class Player2 extends cc.Component {
 
     onAnimationFinished(event, data){
         if(data.name === 'att'){
-            this.charState = State.stand;
-            this.setAni('plidle');
+            this.charState = State.STAND;
+            this.setAni(AnimationState.ATTACK);
+            this.attackState = AttackState.NONE;
         }
 
-        if(data.name === 'plhit'){
+        if(data.name === AnimationState.HIT){
             if(this.hp == 0 || this.hp < 0){
                 this.node.pauseAllActions();
                 this.is_death = true;
-                this.heroAni.play('pldead');
+                this.heroAni.play(AnimationState.DEAD);
                 this.scheduleOnce(function(){
                     this.node.destroy();
                     cc.director.loadScene("scene_01");
@@ -185,30 +218,30 @@ export default class Player2 extends cc.Component {
 
         if(other.node.group == 'enemy' && other.tag === 10){
             this.hp--;
-            this.heroAni.play('plhit');
+            this.heroAni.play(AnimationState.HIT);
             console.log(this.hp);
-            this.setAni('plidle');
+            this.setAni(AnimationState.IDLE);
         }
 
         if(other.node.group == 'enemy' && other.tag === 15){
             this.hp--;
-            this.heroAni.play('plhit');
+            this.heroAni.play(AnimationState.HIT);
             console.log(this.hp);
-            this.setAni('plidle');
+            this.setAni(AnimationState.IDLE);
         }
 
         if(other.node.group == 'enemy' && other.tag === 20){
             this.hp--;
-            this.heroAni.play('plhit');
+            this.heroAni.play(AnimationState.HIT);
             console.log(this.hp);
-            this.setAni('plidle');
+            this.setAni(AnimationState.IDLE);
         }
 
         if(other.node.group == 'enemy' && other.tag === 6 && self.tag ==0){
             this.hp--;
-            this.heroAni.play('plhit');
+            this.heroAni.play(AnimationState.HIT);
             console.log(this.hp);
-            this.setAni('plidle');
+            this.setAni(AnimationState.IDLE);
         }
     }
 
@@ -265,20 +298,20 @@ export default class Player2 extends cc.Component {
         if(Input[cc.macro.KEY.left] || Input[cc.macro.KEY.a]){
             this.sp.x = -1;
             this.node.scaleX = -_scaleX;
-            this.setAni('plrun');
+            this.setAni(AnimationState.RUN);
             this.pos_X_thunder = -150;
             this.scale_x_thunder_bird = -1;
         }
         else if (Input[cc.macro.KEY.right] || Input[cc.macro.KEY.d]){
             this.sp.x = 1;
             this.node.scaleX = _scaleX;
-            this.setAni('plrun');
+            this.setAni(AnimationState.RUN);
             this.pos_X_thunder = 150;
             this.scale_x_thunder_bird = 1;
         }
         else{
             this.sp.x = 0;
-            this.setAni('plidle');
+            this.setAni(AnimationState.IDLE);
         }
 
         if(Input[cc.macro.KEY.up] || Input[cc.macro.KEY.w]){
@@ -294,7 +327,7 @@ export default class Player2 extends cc.Component {
         }
 
         if(Input[cc.macro.KEY.h]){
-            this.heroAni.play('teleport');
+            this.heroAni.play(AnimationState.TELEIN);
             let pos = this.node.getPosition();
             if(this.node.scaleX == -0.7){
                 this.node.setPosition(pos.x-30, pos.y);
@@ -302,7 +335,8 @@ export default class Player2 extends cc.Component {
             else{
                 this.node.setPosition(pos.x+30, pos.y);
             }
-            this.heroAni.play('teleportout');
+            this.heroAni.play(AnimationState.TELEOUT);
+            this.charState = State.STAND;
         }
 
         if(this.sp.x){
@@ -321,14 +355,11 @@ export default class Player2 extends cc.Component {
     }
 
     update (dt) {
-        // if(State.attack){
-        //     return;
-        // }
 
         if(this.hp == 0 || this.hp < 0){
             this.node.pauseAllActions();
             this.is_death = true;
-            this.heroAni.play('pldead');
+            this.heroAni.play(AnimationState.DEAD);
             this.scheduleOnce(function(){
                 this.node.destroy();
                 cc.director.loadScene("scene_01");
@@ -336,56 +367,64 @@ export default class Player2 extends cc.Component {
         }
 
         switch(this.charState){
-            case State.stand: {
+            case State.STAND: {
                 if(Input[cc.macro.KEY.j]){
-                    this.charState = State.attack;
+                    this.charState = State.ATTACK;
                 }
 
                 if(Input[cc.macro.KEY.k]){
-                    this.charState = State.attack;
+                    this.charState = State.ATTACK;
                 }
 
                 if(Input[cc.macro.KEY.l]){
-                    this.charState = State.attack;
+                    this.charState = State.ATTACK;
                 }
                 break;
             }
         }
 
-        if(this.charState == State.attack){
+        if(this.charState == State.ATTACK){
             if(Input[cc.macro.KEY.j]){
-                this.setAni('att');
-                this.node.getComponent(cc.BoxCollider).size.width = 130;
-                this.node.getComponent(cc.BoxCollider).offset.x = 35;
-                this.node.getComponent(cc.BoxCollider).tag = 5;
-
-                this.scheduleOnce(function(){
-                    this.node.getComponent(cc.BoxCollider).size.width = 60;
-                    this.node.getComponent(cc.BoxCollider).offset.x = 0;
-                    this.node.getComponent(cc.BoxCollider).tag = 0;
-                },0.7)
+                if(this.attackState == AttackState.NONE){
+                    this.setAni(AnimationState.ATTACK);
+                    this.node.getComponent(cc.BoxCollider).size.width = 130;
+                    this.node.getComponent(cc.BoxCollider).offset.x = 35;
+                    this.node.getComponent(cc.BoxCollider).tag = 5;
+    
+                    this.scheduleOnce(function(){
+                        this.node.getComponent(cc.BoxCollider).size.width = 60;
+                        this.node.getComponent(cc.BoxCollider).offset.x = 0;
+                        this.node.getComponent(cc.BoxCollider).tag = 0;
+                    },0.7)
+                }
             }
 
             if(Input[cc.macro.KEY.k]){
-                console.log('kthunder')
-                this.setAni('att');
-                this.thunderStrike(this.pos_X_thunder);
-                // this.charState = State.stand;
+                if(this.attackState == AttackState.NONE){
+                    this.attackState = AttackState.KTHUNDER;
+                    console.log('kthunder')
+                    this.setAni(AnimationState.ATTACK);
+                    this.thunderStrike(this.pos_X_thunder);
+                    // this.charState = State.stand;
+                }
             }
 
             if(Input[cc.macro.KEY.l]){
-                console.log('lthunder');
-                this.setAni('att');
-                this.thunderBirdStrike(this.scale_x_thunder_bird);
-                // this.charState = State.stand;
+                if(this.attackState == AttackState.NONE){
+                    this.attackState = AttackState.LTHUNDER;
+                    console.log('lthunder');
+                    this.setAni(AnimationState.ATTACK);
+                    this.thunderBirdStrike(this.scale_x_thunder_bird);
+                    // this.charState = State.stand;
+                }
             }
         }
 
-        if(this.charState != State.stand){
+        if(this.charState != State.STAND){
             this.sp.x = 0;
         }
         else{
-            if(this.charState == State.stand){
+            if(this.charState == State.STAND){
                 this.movePlayer();
             }
         }

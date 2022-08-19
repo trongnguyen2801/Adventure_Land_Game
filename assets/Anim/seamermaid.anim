@@ -96,19 +96,19 @@
       "y": [
         {
           "frame": 0.6,
-          "value": -370.075
+          "value": 167
         },
         {
           "frame": 0.9,
-          "value": -340.878
+          "value": 214
         },
         {
           "frame": 1.26,
-          "value": -340.878
+          "value": 214
         },
         {
           "frame": 1.54,
-          "value": -376.678
+          "value": 167
         }
       ]
     }

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "aebbb569-d630-4c35-b1fc-7617f6870d36",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 596,
+  "platformSettings": {},
+  "subMetas": {
+    "src=http___pic135.huitu.com_res_20191225_2173503_20191225230424693037_1.jpg&refer=http___pic135.huitu": {
+      "ver": "1.0.6",
+      "uuid": "6c14b6a3-7a67-4ad4-87d6-309b29d6d9d2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "aebbb569-d630-4c35-b1fc-7617f6870d36",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 900,
+      "height": 596,
+      "rawWidth": 900,
+      "rawHeight": 596,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
