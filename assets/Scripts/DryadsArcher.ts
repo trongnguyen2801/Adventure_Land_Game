@@ -1,4 +1,11 @@
 
+export enum AnimationState{
+    DRYADSIDLE = 'dryadsidle',
+    DRYADSHIT = 'dryadshit',
+    ARCHERATTACK = 'archerat',
+
+}
+
 const {ccclass, property} = cc._decorator;
 
 @ccclass
@@ -26,11 +33,11 @@ export default class DryadsArcher extends cc.Component {
         this.hp = 2;
         this.anim = this.getComponent(cc.Animation);
         this.anim.on('finished',this.onAnimationFinished,this);
-        this.anim.play('dryadsidle')
+        this.anim.play(AnimationState.DRYADSIDLE)
     }
 
     onAnimationFinished(event, data){
-        if(data.name === 'dryadshit'){
+        if(data.name === AnimationState.DRYADSHIT){
             if(this.hp == 0 || this.hp < 0){
                 this.is_death = true;
                 this.checkpoint.destroy();
@@ -38,42 +45,44 @@ export default class DryadsArcher extends cc.Component {
                 this.node.destroy();
             }
         }
+
+        if(data.name === AnimationState.ARCHERATTACK){
+            this.anim.play(AnimationState.DRYADSIDLE);
+        }
     }
 
     onCollisionEnter(other, self){
         if(other.node.group === 'player' && other.tag === 5){
             this.hp--;
-            this.anim.play('dryadshit');
+            this.anim.play(AnimationState.DRYADSHIT);
         }
 
         if(other.node.group === 'thunder' && other.tag === 35){
             this.hp = 0;
-            this.anim.play('dryadshit');
+            this.anim.play(AnimationState.DRYADSHIT);
         }
 
         if(other.node.group === 'thunder' && other.tag === 30){
             this.hp = 0;
-            this.anim.play('dryadshit');
+            this.anim.play(AnimationState.DRYADSHIT);
         }
     }
 
     throwArrowPlayer(check:boolean){
         if(check){
             this.node.setScale(-0.4,0.4);
-            this.anim.play('archerat');
             this.scheduleOnce(function(){
                 this.arrowAttackLeft();
             },0.5)
-            this.anim.play('dryadsidle')
-
+            this.anim.play(AnimationState.ARCHERATTACK);
+            
         }
         else{
             this.node.setScale(0.4,0.4);
-            this.anim.play('archerat');
             this.scheduleOnce(function(){
                 this.arrowAttackRight();
             },0.5)
-            this.anim.play('dryadsidle')
+            this.anim.play(AnimationState.ARCHERATTACK);
         }
     }
 

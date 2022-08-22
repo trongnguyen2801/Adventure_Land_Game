@@ -11,12 +11,11 @@ export default class Ship extends cc.Component {
     onLoad () {
 
     }
-
     
     onCollisionEnter(other, self){
         if(other.node.group === 'player'){
             cc.tween(this.node)
-            .to(4,{position: new cc.Vec3(4769,-536,0)})
+            .to(10,{position: new cc.Vec3(5800,60,0)})
             .start();
         }
     }

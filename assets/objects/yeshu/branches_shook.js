@@ -55,7 +55,6 @@ cc.Class({
 
             
             // this.material.setProperty("time", this.time);
-            // this.material.setProperty("radian2", this.radian2);
             this.material.setProperty("wind_num", this.wind_num);
             this.material.setProperty("radian", this.radian);
             this.material.setProperty("Flexibility", this.Flexibility);

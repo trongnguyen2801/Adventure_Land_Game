@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "novusidle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.2666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "5887e6cf-f8cb-458d-a381-4e5e58098098"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "563c6274-e17e-4bd0-bc60-05d25aded043"
+            }
+          },
+          {
+            "frame": 0.5833333333333334,
+            "value": {
+              "__uuid__": "086ea314-65c5-4ecc-ab70-0826c31c5a87"
+            }
+          },
+          {
+            "frame": 0.9166666666666666,
+            "value": {
+              "__uuid__": "563c6274-e17e-4bd0-bc60-05d25aded043"
+            }
+          },
+          {
+            "frame": 1.25,
+            "value": {
+              "__uuid__": "5887e6cf-f8cb-458d-a381-4e5e58098098"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

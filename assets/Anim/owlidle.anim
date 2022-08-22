@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "owlidle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5333333333333333,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "dd8e8fd7-b465-4fd8-96d8-f92d9afe9cd8"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "2ca9c7fa-d2a2-49b2-a94f-5b2c42332bd4"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "dd8e8fd7-b465-4fd8-96d8-f92d9afe9cd8"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "2ca9c7fa-d2a2-49b2-a94f-5b2c42332bd4"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

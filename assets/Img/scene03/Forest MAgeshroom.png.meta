@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c132c907-b214-4eca-9379-0854e614a3ed",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 273,
+  "height": 219,
+  "platformSettings": {},
+  "subMetas": {
+    "Forest MAgeshroom": {
+      "ver": "1.0.6",
+      "uuid": "10f8aeb3-fd99-4703-b17d-f2d455ea88b8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c132c907-b214-4eca-9379-0854e614a3ed",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 1,
+      "trimY": 2,
+      "width": 271,
+      "height": 216,
+      "rawWidth": 273,
+      "rawHeight": 219,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
