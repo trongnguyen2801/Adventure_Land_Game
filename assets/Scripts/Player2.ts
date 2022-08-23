@@ -60,7 +60,8 @@ export enum CheckpointTag{
     FIRE2 = 13,
     FIRE3 = 14,
     FIRE4 = 15,
-    BLUEFIRE = 16,
+    BLUEFIREL = 16,
+    BLUEFIRER = 17,
 }
 
 const {ccclass, property} = cc._decorator;
@@ -74,14 +75,10 @@ export default class Player2 extends cc.Component {
     on_the_ground: boolean;
     anim: string;
     jump_force: number;
-    is_l_o_r: boolean = false;
-    active_green_enemy: boolean = false;
-    active_attack: boolean = false;
     hp:number;
     is_death: boolean = false;
     pos_X_thunder: number = 0;
     scale_x_thunder_bird:number = 0;
-    novusAttack: boolean = false;
 
     dragon_child: DragonChild = null;
     enemy_green: EnemyGreen = null;
@@ -128,9 +125,6 @@ export default class Player2 extends cc.Component {
     fire3: cc.Node = null;
 
     @property(cc.Node)
-    fire4: cc.Node = null;
-
-    @property(cc.Node)
     checkpointfire1: cc.Node = null;
 
     @property(cc.Node)
@@ -139,8 +133,6 @@ export default class Player2 extends cc.Component {
     @property(cc.Node)
     checkpointfire3: cc.Node = null;
 
-    @property(cc.Node)
-    checkpointfire4: cc.Node = null;
     
 
     // LIFE-CYCLE CALLBACKS:
@@ -224,29 +216,24 @@ export default class Player2 extends cc.Component {
 
     onCollisionEnter(other,self){
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.FIREBALLLEFT){
-            this.is_l_o_r = true;
-            this.dragon_child.throwFireBallPlayer(this.is_l_o_r);
+            this.dragon_child.throwFireBallPlayer(true);
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.FIREBALLRIGHT){
-            this.is_l_o_r = false;
-            this.dragon_child.throwFireBallPlayer(this.is_l_o_r);
+            this.dragon_child.throwFireBallPlayer(false);
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.ENEMYGREEN){
-            this.active_green_enemy = true;
-            this.enemy_green.attack(this.active_green_enemy);
+            this.enemy_green.attack(true);
             console.log('enemy');
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.DRYADSARROWLEFT){
-            this.is_l_o_r = true;
-            this.dryads_archer.throwArrowPlayer(this.is_l_o_r);
+            this.dryads_archer.throwArrowPlayer(true);
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.DRYADSARROWRIGHT){
-            this.is_l_o_r = false;
-            this.dryads_archer.throwArrowPlayer(this.is_l_o_r);
+            this.dryads_archer.throwArrowPlayer(false);
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.SEAMERMAID){
@@ -257,8 +244,7 @@ export default class Player2 extends cc.Component {
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === EnemyTag.SLIMEATTACK){
-            this.active_attack = true;
-            this.slime.attack(this.active_attack);
+            this.slime.attack(true);
             console.log('slime');
         }
 
@@ -308,17 +294,19 @@ export default class Player2 extends cc.Component {
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.NOVUSATTACKLEFT){
-            this.novusAttack = true;
-            this.novus.attackLeft(this.novusAttack);
+            this.novus.attackLeft(true);
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.NOVUSATTACKRIGHT){
-            this.novusAttack = false;
-            this.novus.attackRight(this.novusAttack);
+            this.novus.attackRight(false);
         }
 
-        if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.BLUEFIRE){
+        if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.BLUEFIREL){
             this.mageshroom.attackLeft(true);
+        }
+
+        if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.BLUEFIRER){
+            this.mageshroom.attackRight(true);
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.FIRE1){
@@ -334,11 +322,6 @@ export default class Player2 extends cc.Component {
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.FIRE3){
             this.fire3.active = true;
             this.checkpointfire3.destroy();
-        }
-
-        if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.FIRE4){
-            this.fire4.active = true;
-            this.checkpointfire4.destroy();
         }
     }
 

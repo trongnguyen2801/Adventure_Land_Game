@@ -2,7 +2,7 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class IArrow extends cc.Component {
+export default class IceArrow extends cc.Component {
 
     @property(cc.Animation)
     anim:cc.Animation = null;

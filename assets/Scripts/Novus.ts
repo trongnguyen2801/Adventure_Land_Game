@@ -9,11 +9,12 @@ export default class Novus extends cc.Component {
 
 
     @property(cc.Prefab)
-    airArrow: cc.Prefab = null;
+    iceArrow: cc.Prefab = null;
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         this.anim = this.getComponent(cc.Animation);
+        this.anim.play('novusidle');
     }
 
     start () {
@@ -22,20 +23,27 @@ export default class Novus extends cc.Component {
 
     attackLeft(check){
         if(check){
+            if(this.node.scaleX < 0){
+                this.node.scaleX = 0.5;
+            }
             this.anim.play('novusattack');
             this.scheduleOnce(function(){
-                let airA_prefab = cc.instantiate(this.airArrow);
-                airA_prefab.parent = this.node.parent;
+                let iceA_prefab = cc.instantiate(this.iceArrow);
+                iceA_prefab.parent = this.node.parent;
                 let pos = this.node.getPosition();
-                airA_prefab.scaleX = 0.5;
-                airA_prefab.scaleY = 0.4;
-                airA_prefab.setPosition(pos);
-                pos.x -= 300;
-                cc.tween(airA_prefab)
-                .to(1,{position: new cc.Vec3(pos.x,pos.y,0)},{easing:'quartOut'})
+                iceA_prefab.scaleX = 0.5;
+                iceA_prefab.scaleY = 0.4;
+                iceA_prefab.setPosition(pos.x,pos.y+100);
+                pos.x -= 450;
+                pos.y -= 100;
+                cc.tween(iceA_prefab)
+                .to(1.5,{position: new cc.Vec3(pos.x,pos.y,-100)},{easing:'quartOut'})
                 .start();
             },0.5);
-            this.anim.play('novusidle');
+
+            this.scheduleOnce(function(){
+                this.anim.play('novusidle');
+            },0.5);
         }
     }
 
@@ -44,19 +52,23 @@ export default class Novus extends cc.Component {
             this.node.scaleX = -0.5;
             this.anim.play('novusattack');
             this.scheduleOnce(function(){
-                let airA_prefab = cc.instantiate(this.airArrow);
-                let scale = airA_prefab.scaleX;
-                airA_prefab.parent = this.node.parent;
+                let iceAr_prefab = cc.instantiate(this.iceArrow);
+                let scale = iceAr_prefab.scaleX;
+                iceAr_prefab.parent = this.node.parent;
                 let pos = this.node.getPosition();
-                airA_prefab.scaleX = -0.5;
-                airA_prefab.scaleY = 0.4;
-                airA_prefab.setPosition(pos);
-                pos.x += 300;
-                cc.tween(airA_prefab)
-                .to(1,{position: new cc.Vec3(pos.x,pos.y,0)},{easing:'quartOut'})
+                iceAr_prefab.scaleX = -0.5;
+                iceAr_prefab.scaleY = 0.4;
+                iceAr_prefab.setPosition(pos.x,pos.y+100);
+                pos.x += 400;
+                pos.y -= 100;
+                cc.tween(iceAr_prefab)
+                .to(1.5,{position: new cc.Vec3(pos.x,pos.y,-100)},{easing:'quartOut'})
                 .start();
             },0.5)
-            this.anim.play('novusidle');
+
+            this.scheduleOnce(function(){
+                this.anim.play('novusidle');
+            },0.5);
         }
     }
 

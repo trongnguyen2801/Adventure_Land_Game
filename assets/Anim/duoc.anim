@@ -1,0 +1,88 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "duoc",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.85,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "a13b22ef-bdf2-4596-a439-9a8fd127af0e"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "a3a243c5-497e-4c37-ad8d-e6e8caac711a"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "4f00ad7a-130f-4393-ad7f-6eb9eee42385"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "5f51cb4d-b728-442a-af19-9a862df314b4"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "48f62346-566b-4f7d-9d99-84d148dab336"
+            }
+          },
+          {
+            "frame": 0.4166666666666667,
+            "value": {
+              "__uuid__": "2c630eb4-7c41-469d-b0c2-06e0edc9443f"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "98366ce9-1eee-4999-8b02-6368741dca6b"
+            }
+          },
+          {
+            "frame": 0.5833333333333334,
+            "value": {
+              "__uuid__": "33ddd007-8c16-4231-8061-aca7f729cf01"
+            }
+          },
+          {
+            "frame": 0.6666666666666666,
+            "value": {
+              "__uuid__": "e6b50629-bdbc-4f4e-97ee-67873d54dc6f"
+            }
+          },
+          {
+            "frame": 0.75,
+            "value": {
+              "__uuid__": "03728051-f7c4-4c33-9d70-40341ba4b766"
+            }
+          },
+          {
+            "frame": 0.8333333333333334,
+            "value": {
+              "__uuid__": "bbbac8fb-629d-4ced-be5f-f0bfad82adde"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "y": []
+    }
+  },
+  "events": []
+}

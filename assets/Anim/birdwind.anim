@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "birdwind",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.85,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "995c832d-f67b-47e9-a183-809dcc34cf5b"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "4cc0dfd3-e572-400a-bba0-a424dc3d7958"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "216db60b-3da5-403f-97f0-863acd848b4f"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "984d1dc6-3d0c-421c-90fa-f28f0b0650fc"
+            }
+          },
+          {
+            "frame": 0.6666666666666666,
+            "value": {
+              "__uuid__": "99ff602f-71ec-42aa-b7d5-49139ed78030"
+            }
+          },
+          {
+            "frame": 0.8333333333333334,
+            "value": {
+              "__uuid__": "92f263fe-8faa-408a-b2a7-96b93679d84d"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
