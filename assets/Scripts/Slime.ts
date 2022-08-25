@@ -1,6 +1,11 @@
 import Player2 from "./Player2";
 const {ccclass, property} = cc._decorator;
 
+export enum AnimationState{
+    IDLE = 'slimeidle',
+    HIT = 'slimehit',
+}
+
 @ccclass
 export default class Slime extends cc.Component {
 
@@ -28,12 +33,12 @@ export default class Slime extends cc.Component {
         // this.player = cc.find('Canvas/Player2').getComponent(Player2);
 
         this.anim = this.getComponent(cc.Animation);
-        this.anim.play('slimeidle');
+        this.anim.play(AnimationState.IDLE);
         this.anim.on('finished',this.onAnimationFinished,this);
     }
 
     onAnimationFinished(event, data){
-        if(data.name === 'slimehit'){
+        if(data.name === AnimationState.HIT){
             if(this.hp == 0 || this.hp < 0){
                 this.is_death = true;
                 this.node.destroy();
@@ -45,18 +50,18 @@ export default class Slime extends cc.Component {
     onCollisionEnter(other, self){
         if(other.node.group === 'player' && other.tag === 5){
             this.hp--;
-            this.anim.play('slimehit');
+            this.anim.play(AnimationState.HIT);
         }
 
         if(other.node.group === 'thunder' && other.tag === 35){
             this.hp = 0;
-            this.anim.play('slimehit');
+            this.anim.play(AnimationState.HIT);
             console.log('dieb');
         }
 
         if(other.node.group === 'thunder' && other.tag === 30){
             this.hp = 0;
-            this.anim.play('slimehit');
+            this.anim.play(AnimationState.HIT);
             console.log('die');
         }
     }
@@ -67,7 +72,7 @@ export default class Slime extends cc.Component {
             this.checkpoint.destroy();
         }
         this.schedule(function(){
-            this.anim.play('slimeidle');
+            this.anim.play(AnimationState.IDLE);
             let pos = this.player.getPosition();
             let nodePos = this.node.getPosition();
 

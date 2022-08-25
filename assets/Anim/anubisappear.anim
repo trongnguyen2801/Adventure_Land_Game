@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "anubisappear",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "192dcd2d-da1c-4a66-ad22-59a7617267e0"
+            }
+          },
+          {
+            "frame": 0.11666666666666667,
+            "value": {
+              "__uuid__": "a041c473-d692-4ff4-9ebe-4f27453b8091"
+            }
+          },
+          {
+            "frame": 0.26666666666666666,
+            "value": {
+              "__uuid__": "d10f74f5-be8c-486d-be95-f16be3afc051"
+            }
+          },
+          {
+            "frame": 0.38333333333333336,
+            "value": {
+              "__uuid__": "61ccf9ce-0fe1-4a2e-afd8-21c658d7cfd3"
+            }
+          },
+          {
+            "frame": 0.5166666666666667,
+            "value": {
+              "__uuid__": "73bfa34f-33b6-45d9-800a-1621cf2c87f1"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

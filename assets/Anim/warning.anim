@@ -1,0 +1,145 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "warning",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.1,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 0,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "77240b39-e1ac-49e8-a8a9-91dd8198eaec"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "8d4973e6-8ad8-43eb-930e-ab5e8a01b7ad"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "b547d66e-5da0-442f-9272-5adf9b451193"
+            }
+          },
+          {
+            "frame": 1.5,
+            "value": {
+              "__uuid__": "6240c5c0-b7b3-47f2-927c-5e97b66a459b"
+            }
+          },
+          {
+            "frame": 2,
+            "value": {
+              "__uuid__": "32889983-f792-43ca-8ee5-8c7ae3400bb9"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "frame": 0.5,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1.1,
+            "y": 1.1
+          }
+        },
+        {
+          "frame": 1,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "frame": 1.5,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1.1,
+            "y": 1.1
+          }
+        },
+        {
+          "frame": 2,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        }
+      ],
+      "color": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.5,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 241,
+            "g": 16,
+            "b": 16,
+            "a": 255
+          }
+        },
+        {
+          "frame": 1,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "frame": 1.5,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 243,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "frame": 2,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        }
+      ]
+    }
+  },
+  "events": []
+}

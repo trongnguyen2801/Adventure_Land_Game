@@ -1,6 +1,12 @@
 
 const {ccclass, property} = cc._decorator;
 
+export enum AnimationState{
+    IDLE = 'leafen',
+    HIT = 'leafenhit',
+    ATTACK = 'leafenat',
+}
+
 @ccclass
 export default class DryadsArcher extends cc.Component {
 
@@ -26,11 +32,11 @@ export default class DryadsArcher extends cc.Component {
         this.hp = 2;
         this.anim = this.getComponent(cc.Animation);
         this.anim.on('finished',this.onAnimationFinished,this);
-        this.anim.play('leafen')
+        this.anim.play(AnimationState.IDLE)
     }
 
     onAnimationFinished(event, data){
-        if(data.name === 'leafenhit'){
+        if(data.name === AnimationState.HIT){
             if(this.hp == 0 || this.hp < 0){
                 this.is_death = true;
                 this.checkpoint_range.destroy();
@@ -43,37 +49,37 @@ export default class DryadsArcher extends cc.Component {
     onCollisionEnter(other, self){
         if(other.node.group === 'player' && other.tag === 5){
             this.hp--;
-            this.anim.play('leafenhit');
+            this.anim.play(AnimationState.HIT);
         }
 
         if(other.node.group === 'thunder' && other.tag === 35){
             this.hp = 0;
-            this.anim.play('leafenhit');
+            this.anim.play(AnimationState.HIT);
         }
 
         if(other.node.group === 'thunder' && other.tag === 30){
             this.hp = 0;
-            this.anim.play('leafenhit');
+            this.anim.play(AnimationState.HIT);
         }
     }
 
     throwArrowPlayer(check:boolean){
         if(check){
             this.node.setScale(-0.5,0.5);
-            this.anim.play('leafenat');
+            this.anim.play(AnimationState.ATTACK);
             this.scheduleOnce(function(){
                 this.arrowAttackLeft();
             },0.5)
-            this.anim.play('leafen')
+            this.anim.play(AnimationState.IDLE);
 
         }
         else{
             this.node.setScale(0.5,0.5);
-            this.anim.play('leafenat');
+            this.anim.play(AnimationState.ATTACK);
             this.scheduleOnce(function(){
                 this.arrowAttackRight();
             },0.5)
-            this.anim.play('leafen')
+            this.anim.play(AnimationState.IDLE);
         }
     }
 

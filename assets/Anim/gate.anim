@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "gate",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.4666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "5159d94c-5525-4b81-a66f-c616cbf9a201"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "25b67d46-aaf8-4860-923a-98bda8f49a08"
+            }
+          },
+          {
+            "frame": 0.18333333333333332,
+            "value": {
+              "__uuid__": "4cc86ac0-5f32-44a9-a9cf-bd8c7a5fceec"
+            }
+          },
+          {
+            "frame": 0.2833333333333333,
+            "value": {
+              "__uuid__": "99310600-c493-47e6-a225-060a9572e5ed"
+            }
+          },
+          {
+            "frame": 0.36666666666666664,
+            "value": {
+              "__uuid__": "50bd43d5-4f20-4bc1-9852-008073c8d444"
+            }
+          },
+          {
+            "frame": 0.45,
+            "value": {
+              "__uuid__": "928c8464-afb5-4a85-8d63-b509f000e2fd"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

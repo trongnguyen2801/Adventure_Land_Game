@@ -6,6 +6,7 @@ import Slime from "./Slime";
 import Leafen from "./Leafen";
 import Novus from "./Novus";
 import MageShroom from "./MageShroom";
+import Anubis from "./Anubis";
 
 const Input = {};
 
@@ -30,19 +31,29 @@ export enum AnimationState{
     HIT = 'plhit',
 }
 
+export enum Artifact{
+    KEY = 1,
+}
+
+export enum LocalStorage{
+    ARTIFACTKEY = 'artifactKey',
+}
+
 export enum Group{
     CHECKPOINT = 'checkpoint',
     WALLS = 'walls',
     ENEMY = 'enemy',
+    ARTIFACT = 'artifact',
 }
 
-export enum EnemyTag{
+export enum EnemySkillTag{
     SLIMEATTACK = 1,
     BALLFIRE = 2,
     ARROW = 3,
     EXPLOSION = 4,
     AIRARROW = 5,
     BLUEFIRE = 6,
+    AIRBLADE = 7,
 }
 
 export enum CheckpointTag{
@@ -62,6 +73,8 @@ export enum CheckpointTag{
     FIRE4 = 15,
     BLUEFIREL = 16,
     BLUEFIRER = 17,
+    ANUBISAPPEAR = 18,
+    AIRBLADEAT = 19,
 }
 
 const {ccclass, property} = cc._decorator;
@@ -79,6 +92,11 @@ export default class Player2 extends cc.Component {
     is_death: boolean = false;
     pos_X_thunder: number = 0;
     scale_x_thunder_bird:number = 0;
+    count: number = 0;
+    spellThunder: number = null;
+    spellBirdThunder: number = null;
+    artifact: number = null;
+    checkLevelKey:number = null;
 
     dragon_child: DragonChild = null;
     enemy_green: EnemyGreen = null;
@@ -89,6 +107,7 @@ export default class Player2 extends cc.Component {
     leafen: Leafen = null;
     novus: Novus = null;
     mageshroom: MageShroom = null;
+    anubis: Anubis = null;
 
     lv: cc.Vec2;
     sp: cc.Vec2;
@@ -133,7 +152,21 @@ export default class Player2 extends cc.Component {
     @property(cc.Node)
     checkpointfire3: cc.Node = null;
 
-    
+    @property(cc.Node)
+    glyph1: cc.Node = null;
+
+    @property(cc.Node)
+    glyph2: cc.Node = null;
+
+    @property(cc.Node)
+    glyph3: cc.Node = null;
+
+    @property(cc.Prefab)
+    supporter: cc.Prefab = null;
+
+    @property(cc.Node)
+    stone:cc.Node = null;
+
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -148,6 +181,7 @@ export default class Player2 extends cc.Component {
         this.leafen = cc.find("Canvas/scene02/leafen").getComponent(Leafen);
         this.novus = cc.find("Canvas/scene03/novus").getComponent(Novus);
         this.mageshroom = cc.find("Canvas/scene03/mageshroom").getComponent(MageShroom);
+        this.anubis = cc.find("Canvas/scene03/anubis").getComponent(Anubis);
 
         //active debugDrawPhysics
 
@@ -163,12 +197,19 @@ export default class Player2 extends cc.Component {
         this._speed = 200;
         this.jump_force = 100000;
         this.sp = cc.v2(0,0);
-        this.hp = 4;
+        this.hp = 10;
+        this.count = 0;
+        this.spellThunder = 4;
+        this.spellBirdThunder = 4;
+        this.artifact = 4;
+        this.checkLevelKey = 0;
+        cc.sys.localStorage.setItem(LocalStorage.ARTIFACTKEY, this.artifact);
 
         this.charState = State.STAND;
         this.attackState = AttackState.NONE;
-        this.heroAni.on('finished',this.onAnimationFinished,this);
 
+        this.heroAni.on('finished',this.onAnimationFinished,this);
+        
         cc.systemEvent.on('keydown',this.onKeyDown,this);
         cc.systemEvent.on('keyup',this.onKeyUp,this);
 
@@ -190,8 +231,8 @@ export default class Player2 extends cc.Component {
     onAnimationFinished(event, data){
         if(data.name === 'att'){
             this.charState = State.STAND;
-            this.setAni(AnimationState.ATTACK);
             this.attackState = AttackState.NONE;
+            this.heroAni.play(AnimationState.IDLE);
         }
 
         if(data.name === AnimationState.HIT){
@@ -243,7 +284,7 @@ export default class Player2 extends cc.Component {
             },1);
         }
 
-        if(other.node.group === Group.CHECKPOINT && other.tag === EnemyTag.SLIMEATTACK){
+        if(other.node.group === Group.CHECKPOINT && other.tag === EnemySkillTag.SLIMEATTACK){
             this.slime.attack(true);
             console.log('slime');
         }
@@ -253,37 +294,44 @@ export default class Player2 extends cc.Component {
             console.log('leafen');
         }
 
-        if(other.node.group === Group.ENEMY && other.tag === EnemyTag.BALLFIRE){
+        if(other.node.group === Group.ENEMY && other.tag === EnemySkillTag.BALLFIRE){
             this.hp--;
             this.heroAni.play(AnimationState.HIT);
             console.log(this.hp);
             this.setAni(AnimationState.IDLE);
         }
 
-        if(other.node.group === Group.ENEMY && other.tag === EnemyTag.ARROW){
+        if(other.node.group === Group.ENEMY && other.tag === EnemySkillTag.ARROW){
             this.hp--;
             this.heroAni.play(AnimationState.HIT);
             console.log(this.hp);
             this.setAni(AnimationState.IDLE);
         }
 
-        if(other.node.group === Group.ENEMY && other.tag === EnemyTag.EXPLOSION){
+        if(other.node.group === Group.ENEMY && other.tag === EnemySkillTag.EXPLOSION){
             this.hp--;
             this.heroAni.play(AnimationState.HIT);
             console.log(this.hp);
             this.setAni(AnimationState.IDLE);
         }
 
-        if(other.node.group === Group.ENEMY && other.tag === EnemyTag.AIRARROW){
+        if(other.node.group === Group.ENEMY && other.tag === EnemySkillTag.AIRARROW){
             this.hp--;
             this.heroAni.play(AnimationState.HIT);
             this.setAni(AnimationState.IDLE);    
         }
 
-        if(other.node.group === Group.ENEMY && other.tag === EnemyTag.BLUEFIRE){
+        if(other.node.group === Group.ENEMY && other.tag === EnemySkillTag.BLUEFIRE){
             this.hp--;
             this.heroAni.play(AnimationState.HIT);
             this.setAni(AnimationState.IDLE);    
+        }
+
+        if(other.node.group === Group.ENEMY && other.tag === EnemySkillTag.AIRBLADE){
+            this.hp--;
+            this.heroAni.play(AnimationState.HIT);
+            console.log(this.hp);
+            this.setAni(AnimationState.IDLE);
         }
 
         if(other.node.group === Group.WALLS && other.tag === CheckpointTag.SHIP){
@@ -292,13 +340,25 @@ export default class Player2 extends cc.Component {
             .to(10.5,{position: new cc.Vec3(4825,pos.y,0)})
             .start();
         }
+        
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.NOVUSATTACKLEFT){
-            this.novus.attackLeft(true);
+            this.count++;
+            if(this.count % 2 === 0){
+                this.novus.comboAttackLeft(this.count);
+            }
+            else{
+                this.novus.attackLeft(true);
+            }
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.NOVUSATTACKRIGHT){
-            this.novus.attackRight(false);
+            this.count++;
+            if(this.count % 2 === 0){
+                this.novus.comboAttackRIght(this.count);
+            }
+            else
+                this.novus.attackRight(false);
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.BLUEFIREL){
@@ -312,16 +372,96 @@ export default class Player2 extends cc.Component {
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.FIRE1){
             this.fire1.active = true;
             this.checkpointfire1.destroy();
+            let _artifact = cc.sys.localStorage.getItem(LocalStorage.ARTIFACTKEY);
+            let pos = this.node.getPosition();
+            if(_artifact > 0){
+                cc.tween(this.node)
+                .to(1,{position: new cc.Vec3(pos.x,pos.y+150,0)})
+                .start();
+
+                this.scheduleOnce(function(){
+                    this.glyph1.opacity = 100;
+                },0.5);
+                this.scheduleOnce(function(){
+                    this.glyph1.opacity = 150;
+                },0.5);
+                this.scheduleOnce(function(){
+                    this.glyph1.opacity = 255;
+                },0.5);
+
+                this.checkLevelKey+=1;
+                _artifact--;
+                cc.sys.localStorage.setItem(LocalStorage.ARTIFACTKEY, _artifact);
+            }
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.FIRE2){
             this.fire2.active = true;
             this.checkpointfire2.destroy();
+            let _artifact = cc.sys.localStorage.getItem(LocalStorage.ARTIFACTKEY);
+            let pos = this.node.getPosition();
+            if(_artifact > 0){
+                cc.tween(this.node)
+                .to(1,{position: new cc.Vec3(pos.x,pos.y+150,0)})
+                .start();
+
+                this.scheduleOnce(function(){
+                    this.glyph2.opacity = 100;
+                },0.5);
+                this.scheduleOnce(function(){
+                    this.glyph2.opacity = 150;
+                },0.5);
+                this.scheduleOnce(function(){
+                    this.glyph2.opacity = 255;
+                },0.5);
+
+                _artifact--;
+                cc.sys.localStorage.setItem(LocalStorage.ARTIFACTKEY, _artifact);
+            }
         }
 
         if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.FIRE3){
             this.fire3.active = true;
             this.checkpointfire3.destroy();
+            let _artifact = cc.sys.localStorage.getItem(LocalStorage.ARTIFACTKEY);
+            let pos = this.node.getPosition();
+            if(_artifact > 0){
+                cc.tween(this.node)
+                .to(1,{position: new cc.Vec3(pos.x,pos.y+150,0)})
+                .start();
+
+                this.scheduleOnce(function(){
+                    this.glyph3.opacity = 100;
+                },0.5);
+                this.scheduleOnce(function(){
+                    this.glyph3.opacity = 150;
+                },0.5);
+                this.scheduleOnce(function(){
+                    this.glyph3.opacity = 255;
+                },0.5);
+
+                _artifact--;
+                cc.sys.localStorage.setItem(LocalStorage.ARTIFACTKEY, _artifact);
+
+                cc.tween(this.stone)
+                .to(1,{position: new cc.Vec3(2400,-330,0)})
+                .start();
+            }
+        }
+
+        if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.ANUBISAPPEAR){
+            cc.director.pause();
+            this.anubis.appearAnubis(true);
+            cc.director.resume();
+        }
+
+        if(other.node.group === Group.ARTIFACT && other.tag === Artifact.KEY){
+            this.artifact++;
+            cc.sys.localStorage.setItem(LocalStorage.ARTIFACTKEY, this.artifact);
+        }
+
+        if(other.node.group === Group.CHECKPOINT && other.tag === CheckpointTag.AIRBLADEAT){
+            this.anubis.attackAirBlade(true);
         }
     }
 
@@ -371,6 +511,7 @@ export default class Player2 extends cc.Component {
     }
 
     movePlayer(){
+
         this.lv = this.Rigid_Body.linearVelocity;
         let anim = this.anim;
         let _scaleX = Math.abs(this.node.scaleX);
@@ -394,10 +535,11 @@ export default class Player2 extends cc.Component {
             this.setAni(AnimationState.IDLE);
         }
 
-        if(Input[cc.macro.KEY.up] || Input[cc.macro.KEY.w]){
+        if(Input[cc.macro.KEY.up] || Input[cc.macro.KEY.w] || Input[cc.macro.KEY.space]){
             if(this.on_the_ground){
                 this.Rigid_Body.applyForceToCenter(cc.v2(0,this.jump_force), true);
                 this.on_the_ground = false;
+                this.charState = State.STAND;
             }
         }
 
@@ -407,6 +549,7 @@ export default class Player2 extends cc.Component {
         }
 
         if(Input[cc.macro.KEY.h]){
+            
             this.heroAni.play(AnimationState.TELEIN);
             let pos = this.node.getPosition();
             if(this.node.scaleX == -0.7){
@@ -448,6 +591,7 @@ export default class Player2 extends cc.Component {
 
         switch(this.charState){
             case State.STAND: {
+
                 if(Input[cc.macro.KEY.j]){
                     this.charState = State.ATTACK;
                 }
@@ -459,6 +603,11 @@ export default class Player2 extends cc.Component {
                 if(Input[cc.macro.KEY.l]){
                     this.charState = State.ATTACK;
                 }
+
+                if(Input[cc.macro.KEY.m]){
+                    this.charState = State.ATTACK;
+                }
+                
                 break;
             }
         }
@@ -481,22 +630,38 @@ export default class Player2 extends cc.Component {
 
             if(Input[cc.macro.KEY.k]){
                 if(this.attackState == AttackState.NONE){
-                    this.attackState = AttackState.KTHUNDER;
-                    console.log('kthunder')
-                    this.setAni(AnimationState.ATTACK);
-                    this.thunderStrike(this.pos_X_thunder);
-                    // this.charState = State.stand;
+                    if(this.spellThunder > 0){
+                        this.attackState = AttackState.KTHUNDER;
+                        console.log('kthunder')
+                        this.setAni(AnimationState.ATTACK);
+                        this.thunderStrike(this.pos_X_thunder);
+                        this.spellThunder -= 1;
+                    }
+                    else{
+                        this.charState = State.STAND;
+                        this.attackState = AttackState.NONE;
+                    }
                 }
+                else
+                    return;
             }
 
             if(Input[cc.macro.KEY.l]){
                 if(this.attackState == AttackState.NONE){
-                    this.attackState = AttackState.LTHUNDER;
-                    console.log('lthunder');
-                    this.setAni(AnimationState.ATTACK);
-                    this.thunderBirdStrike(this.scale_x_thunder_bird);
-                    // this.charState = State.stand;
+                    if(this.spellBirdThunder > 0){
+                        this.attackState = AttackState.LTHUNDER;
+                        console.log('lthunder');
+                        this.setAni(AnimationState.ATTACK);
+                        this.thunderBirdStrike(this.scale_x_thunder_bird);
+                        this.spellBirdThunder -= 1;
+                    }
+                    else{
+                        this.charState = State.STAND;
+                        this.attackState = AttackState.NONE;
+                    }
                 }
+                else
+                    return;
             }
         }
 

@@ -1,6 +1,12 @@
 
 const {ccclass, property} = cc._decorator;
 
+export enum AnimationState{
+    FLY = 'purplefly',
+    HIT = 'purplehit',
+
+}
+
 @ccclass
 export default class PurpleEnemy extends cc.Component {
 
@@ -17,7 +23,7 @@ export default class PurpleEnemy extends cc.Component {
     onLoad () {
         this.hp = 1;
         this.anim = this.getComponent(cc.Animation);
-        this.anim.play('purplefly');
+        this.anim.play(AnimationState.FLY);
     }
 
     start () {
@@ -46,17 +52,17 @@ export default class PurpleEnemy extends cc.Component {
     onCollisionEnter(other, self){
         if(other.node.group === 'player' && other.tag === 5){
             this.hp--;
-            this.anim.play('dragonhit');
+            this.anim.play(AnimationState.HIT);
         }
 
         if(other.node.group === 'thunder' && other.tag === 35){
             this.hp = 0;
-            this.anim.play('dragonhit');
+            this.anim.play(AnimationState.HIT);
         }
 
         if(other.node.group === 'thunder' && other.tag === 30){
             this.hp = 0;
-            this.anim.play('dragonhit');
+            this.anim.play(AnimationState.HIT);
         }
     }
 
