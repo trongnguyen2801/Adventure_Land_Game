@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "45406858-3a2f-428c-87ce-f1f60c903138",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 435,
+  "height": 605,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Dragon Huanglong": {
+      "ver": "1.0.6",
+      "uuid": "94160979-3b44-4d70-bc71-5130b1c7cfd2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "45406858-3a2f-428c-87ce-f1f60c903138",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 433,
+      "height": 603,
+      "rawWidth": 435,
+      "rawHeight": 605,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

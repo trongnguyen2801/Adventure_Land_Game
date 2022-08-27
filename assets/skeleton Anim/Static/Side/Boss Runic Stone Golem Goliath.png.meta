@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "dfca5d5d-ff66-4670-99ab-86e2459f2abd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 470,
+  "height": 614,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Runic Stone Golem Goliath": {
+      "ver": "1.0.6",
+      "uuid": "35923e62-e220-4bce-9fee-2de8b0587a16",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "dfca5d5d-ff66-4670-99ab-86e2459f2abd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -3.5,
+      "trimX": 1,
+      "trimY": 7,
+      "width": 469,
+      "height": 607,
+      "rawWidth": 470,
+      "rawHeight": 614,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

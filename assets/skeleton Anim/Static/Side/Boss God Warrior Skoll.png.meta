@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "cbced149-13ab-4c6b-a94f-a70aaefa4f61",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 274,
+  "height": 237,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss God Warrior Skoll": {
+      "ver": "1.0.6",
+      "uuid": "40a78706-64c7-4a57-9b96-c59cb1a03e1d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "cbced149-13ab-4c6b-a94f-a70aaefa4f61",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 274,
+      "height": 237,
+      "rawWidth": 274,
+      "rawHeight": 237,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

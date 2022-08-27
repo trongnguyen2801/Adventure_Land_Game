@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "dbafaac2-c65c-4ce7-b4f7-b50aa8bcbc0e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 625,
+  "height": 424,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Insect Queen": {
+      "ver": "1.0.6",
+      "uuid": "2446e6a0-70b6-4d52-8055-537071270094",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "dbafaac2-c65c-4ce7-b4f7-b50aa8bcbc0e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 625,
+      "height": 424,
+      "rawWidth": 625,
+      "rawHeight": 424,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

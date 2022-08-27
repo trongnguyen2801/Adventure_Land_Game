@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "952ee716-c91e-4c7f-a7f2-42ad5ce4631b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 262,
+  "height": 163,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss God Warrior Dagon": {
+      "ver": "1.0.6",
+      "uuid": "e1c3dfb9-0157-4861-b79a-2106bd960ccc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "952ee716-c91e-4c7f-a7f2-42ad5ce4631b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 260,
+      "height": 161,
+      "rawWidth": 262,
+      "rawHeight": 163,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

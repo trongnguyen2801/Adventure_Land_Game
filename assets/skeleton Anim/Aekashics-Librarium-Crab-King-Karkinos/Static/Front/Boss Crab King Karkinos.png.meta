@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "33c22f7a-517b-459e-bf6c-e776f5f68291",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 839,
+  "height": 492,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Crab King Karkinos": {
+      "ver": "1.0.6",
+      "uuid": "8fa6731c-7b8d-4da3-ae29-39b2e0481275",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "33c22f7a-517b-459e-bf6c-e776f5f68291",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 837,
+      "height": 490,
+      "rawWidth": 839,
+      "rawHeight": 492,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

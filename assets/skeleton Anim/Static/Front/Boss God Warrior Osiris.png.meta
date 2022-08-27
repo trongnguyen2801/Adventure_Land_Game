@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4100e343-5f4c-4377-a803-9236dc5b2ab0",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 319,
+  "height": 383,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss God Warrior Osiris": {
+      "ver": "1.0.6",
+      "uuid": "0efd13e4-9b3b-418d-827d-e15fa4ee71c6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4100e343-5f4c-4377-a803-9236dc5b2ab0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 318,
+      "height": 383,
+      "rawWidth": 319,
+      "rawHeight": 383,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

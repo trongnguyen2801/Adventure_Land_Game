@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f1af728d-4e4c-4642-8d00-04844f180e83",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 408,
+  "height": 389,
+  "platformSettings": {},
+  "subMetas": {
+    "Zodiac Aries": {
+      "ver": "1.0.6",
+      "uuid": "b9585569-7a29-40dd-9813-eeac2dd859d1",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f1af728d-4e4c-4642-8d00-04844f180e83",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -16.5,
+      "trimX": 1,
+      "trimY": 34,
+      "width": 404,
+      "height": 354,
+      "rawWidth": 408,
+      "rawHeight": 389,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

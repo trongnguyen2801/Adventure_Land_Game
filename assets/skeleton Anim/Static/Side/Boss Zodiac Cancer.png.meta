@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e073731c-4ce9-4563-96ee-56a3d7f8fe3c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 617,
+  "height": 296,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Zodiac Cancer": {
+      "ver": "1.0.6",
+      "uuid": "e7337bee-18bd-40c2-9ef8-2edfb4d19ede",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e073731c-4ce9-4563-96ee-56a3d7f8fe3c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 615,
+      "height": 295,
+      "rawWidth": 617,
+      "rawHeight": 296,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

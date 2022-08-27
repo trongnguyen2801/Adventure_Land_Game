@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "0ab9e4cc-6215-4a4c-8c70-bdfbea54d712",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 253,
+  "height": 212,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Sun Goddess": {
+      "ver": "1.0.6",
+      "uuid": "6d2f77a6-6825-42fb-865d-b999f2d01c9b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "0ab9e4cc-6215-4a4c-8c70-bdfbea54d712",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -3,
+      "offsetY": -1.5,
+      "trimX": 0,
+      "trimY": 3,
+      "width": 247,
+      "height": 209,
+      "rawWidth": 253,
+      "rawHeight": 212,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

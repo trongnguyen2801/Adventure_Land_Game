@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8e6b71d4-b150-40c6-bda7-2ebf80fef7b9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 373,
+  "height": 271,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Daidarabotchi": {
+      "ver": "1.0.6",
+      "uuid": "e7739a0a-b59e-4c5c-89ec-19f3e0342849",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8e6b71d4-b150-40c6-bda7-2ebf80fef7b9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 373,
+      "height": 271,
+      "rawWidth": 373,
+      "rawHeight": 271,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

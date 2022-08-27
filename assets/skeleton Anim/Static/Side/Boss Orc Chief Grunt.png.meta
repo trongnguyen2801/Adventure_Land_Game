@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6d6a7c61-2d3f-4135-88e6-65872cebebb8",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 465,
+  "height": 352,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Orc Chief Grunt": {
+      "ver": "1.0.6",
+      "uuid": "1f331129-992e-4892-a32a-eeb98cb1f459",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6d6a7c61-2d3f-4135-88e6-65872cebebb8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 463,
+      "height": 350,
+      "rawWidth": 465,
+      "rawHeight": 352,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5d901f68-de83-44ac-8434-c3b88b14d8b0",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 507,
+  "height": 564,
+  "platformSettings": {},
+  "subMetas": {
+    "Colossal Dark Crow": {
+      "ver": "1.0.6",
+      "uuid": "b0a1d104-54c0-418f-8564-2aec4e8f387e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5d901f68-de83-44ac-8434-c3b88b14d8b0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -3.5,
+      "trimX": 15,
+      "trimY": 11,
+      "width": 479,
+      "height": 549,
+      "rawWidth": 507,
+      "rawHeight": 564,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

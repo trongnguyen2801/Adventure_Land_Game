@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9f8e4416-67bf-4a12-98e5-d8e27128daa9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 527,
+  "height": 578,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Sea Dragon Leviathan": {
+      "ver": "1.0.6",
+      "uuid": "0a52caf8-5c46-45c2-a691-a6c8705e02fc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9f8e4416-67bf-4a12-98e5-d8e27128daa9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 525,
+      "height": 576,
+      "rawWidth": 527,
+      "rawHeight": 578,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

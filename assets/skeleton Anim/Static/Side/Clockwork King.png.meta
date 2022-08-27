@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "941e9606-e6f8-4add-b213-adc2a8344330",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 403,
+  "height": 434,
+  "platformSettings": {},
+  "subMetas": {
+    "Clockwork King": {
+      "ver": "1.0.6",
+      "uuid": "da7ca9fe-9e72-4620-9384-b6ac9147dd6c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "941e9606-e6f8-4add-b213-adc2a8344330",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 403,
+      "height": 434,
+      "rawWidth": 403,
+      "rawHeight": 434,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

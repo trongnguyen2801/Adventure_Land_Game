@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2256f0ec-ad25-4a9b-8924-d4f3cafcdda6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 448,
+  "height": 538,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Ice Titan Demeres": {
+      "ver": "1.0.6",
+      "uuid": "d42064f3-92fa-4b7f-acd2-ae24a5dfdda2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2256f0ec-ad25-4a9b-8924-d4f3cafcdda6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -1,
+      "trimX": 0,
+      "trimY": 2,
+      "width": 447,
+      "height": 536,
+      "rawWidth": 448,
+      "rawHeight": 538,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

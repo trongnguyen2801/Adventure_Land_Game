@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "df4a3f5b-042e-4959-8155-9650ea5d12c7",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 469,
+  "height": 479,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Black Ant Queen": {
+      "ver": "1.0.6",
+      "uuid": "828404ff-ea5f-47fe-b64d-e38d8e201ac9",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "df4a3f5b-042e-4959-8155-9650ea5d12c7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 468,
+      "height": 477,
+      "rawWidth": 469,
+      "rawHeight": 479,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

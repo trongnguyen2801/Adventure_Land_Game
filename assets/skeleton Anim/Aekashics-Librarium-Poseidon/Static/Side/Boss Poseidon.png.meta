@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9334083a-d55c-4fea-9af2-e33110b5757e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 339,
+  "height": 473,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Poseidon": {
+      "ver": "1.0.6",
+      "uuid": "4be1add5-436f-43a8-b218-8043a3ece508",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9334083a-d55c-4fea-9af2-e33110b5757e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": -1,
+      "trimX": 2,
+      "trimY": 3,
+      "width": 332,
+      "height": 469,
+      "rawWidth": 339,
+      "rawHeight": 473,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "29f57800-f2a5-4dd7-b51f-ce95c8302ce3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 343,
+  "height": 320,
+  "platformSettings": {},
+  "subMetas": {
+    "Clockwork Skull": {
+      "ver": "1.0.6",
+      "uuid": "5638f3b1-82c8-445f-a510-f6451f805409",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "29f57800-f2a5-4dd7-b51f-ce95c8302ce3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 7.5,
+      "offsetY": -0.5,
+      "trimX": 16,
+      "trimY": 5,
+      "width": 326,
+      "height": 311,
+      "rawWidth": 343,
+      "rawHeight": 320,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

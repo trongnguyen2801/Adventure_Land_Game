@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f808638a-bc12-48fb-97bb-8fe7f1536baf",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 466,
+  "height": 415,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Dryad Yggdrasil": {
+      "ver": "1.0.6",
+      "uuid": "fa21c31d-cca7-47ab-a3de-155032a412a8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f808638a-bc12-48fb-97bb-8fe7f1536baf",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 2.5,
+      "offsetY": -2.5,
+      "trimX": 5,
+      "trimY": 5,
+      "width": 461,
+      "height": 410,
+      "rawWidth": 466,
+      "rawHeight": 415,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

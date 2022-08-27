@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "0f1fc963-9908-4cec-ab3e-9bb2398861ee",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 627,
+  "height": 551,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Skull Knight Xoer": {
+      "ver": "1.0.6",
+      "uuid": "79c8db45-a77d-48bf-97aa-25877b0a877d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "0f1fc963-9908-4cec-ab3e-9bb2398861ee",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 626,
+      "height": 549,
+      "rawWidth": 627,
+      "rawHeight": 551,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

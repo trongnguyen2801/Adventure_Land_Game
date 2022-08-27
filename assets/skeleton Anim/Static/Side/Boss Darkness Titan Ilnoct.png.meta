@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c34247f8-c732-41c0-a878-8bbc49aecab5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 763,
+  "height": 800,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Darkness Titan Ilnoct": {
+      "ver": "1.0.6",
+      "uuid": "b9424154-0539-4170-84f1-2ff2ed7a552b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c34247f8-c732-41c0-a878-8bbc49aecab5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 761,
+      "height": 798,
+      "rawWidth": 763,
+      "rawHeight": 800,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

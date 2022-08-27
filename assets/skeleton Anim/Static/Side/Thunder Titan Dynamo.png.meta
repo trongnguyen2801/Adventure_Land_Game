@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7794492e-cb7e-435d-a92b-eece89295f59",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 474,
+  "height": 534,
+  "platformSettings": {},
+  "subMetas": {
+    "Thunder Titan Dynamo": {
+      "ver": "1.0.6",
+      "uuid": "1f24d1c6-12ff-4f80-ab92-a3fe804aa506",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7794492e-cb7e-435d-a92b-eece89295f59",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 472,
+      "height": 531,
+      "rawWidth": 474,
+      "rawHeight": 534,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

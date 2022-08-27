@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e7e13869-b994-467b-b292-cb3c5e55bdbc",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 299,
+  "height": 237,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Mythical Knight Goldnharl": {
+      "ver": "1.0.6",
+      "uuid": "aafac19c-21e8-4e8c-91e5-13d86ef48f08",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e7e13869-b994-467b-b292-cb3c5e55bdbc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 297,
+      "height": 235,
+      "rawWidth": 299,
+      "rawHeight": 237,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

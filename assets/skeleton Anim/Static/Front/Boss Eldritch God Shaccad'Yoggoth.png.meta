@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "daa5b446-c4d7-41a6-be87-f2c7c47b1ebd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 859,
+  "height": 562,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Eldritch God Shaccad'Yoggoth": {
+      "ver": "1.0.6",
+      "uuid": "ab5fab77-1ae9-4c49-9720-ee10b91aa331",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "daa5b446-c4d7-41a6-be87-f2c7c47b1ebd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 858,
+      "height": 560,
+      "rawWidth": 859,
+      "rawHeight": 562,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

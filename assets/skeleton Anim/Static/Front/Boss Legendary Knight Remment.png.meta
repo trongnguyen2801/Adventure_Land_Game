@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e2c36301-7ac8-4cc0-8932-b893a79cc983",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 581,
+  "height": 341,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Legendary Knight Remment": {
+      "ver": "1.0.6",
+      "uuid": "7db6a3b5-b7ed-49c3-b80b-f55232e7035f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e2c36301-7ac8-4cc0-8932-b893a79cc983",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 581,
+      "height": 341,
+      "rawWidth": 581,
+      "rawHeight": 341,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

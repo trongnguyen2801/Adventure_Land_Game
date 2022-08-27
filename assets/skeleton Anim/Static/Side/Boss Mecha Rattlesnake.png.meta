@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "0b087b14-33fe-43a4-9f27-0f5ff4b67486",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 583,
+  "height": 321,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Mecha Rattlesnake": {
+      "ver": "1.0.6",
+      "uuid": "34aa9c42-a027-443f-a59f-32c250932880",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "0b087b14-33fe-43a4-9f27-0f5ff4b67486",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -0.5,
+      "trimX": 1,
+      "trimY": 2,
+      "width": 582,
+      "height": 318,
+      "rawWidth": 583,
+      "rawHeight": 321,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

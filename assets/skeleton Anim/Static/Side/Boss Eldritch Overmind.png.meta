@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c60d9e32-363e-4378-b87d-d95dfeeb7f56",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 530,
+  "height": 515,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Eldritch Overmind": {
+      "ver": "1.0.6",
+      "uuid": "d7a7e301-9abd-43ce-ac84-c68eb81ad9eb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c60d9e32-363e-4378-b87d-d95dfeeb7f56",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 529,
+      "height": 513,
+      "rawWidth": 530,
+      "rawHeight": 515,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

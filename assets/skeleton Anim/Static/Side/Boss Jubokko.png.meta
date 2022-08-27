@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1f9065ea-ea17-4374-b8c1-1ebf2ced7bf1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 358,
+  "height": 423,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Jubokko": {
+      "ver": "1.0.6",
+      "uuid": "e8b46e1d-07c9-4f21-b62c-59c3a0dcbde4",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1f9065ea-ea17-4374-b8c1-1ebf2ced7bf1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 358,
+      "height": 423,
+      "rawWidth": 358,
+      "rawHeight": 423,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

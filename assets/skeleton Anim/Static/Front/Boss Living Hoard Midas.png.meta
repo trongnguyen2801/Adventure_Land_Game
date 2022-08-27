@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9bc21341-2d17-430d-85d6-9f832513e457",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 356,
+  "height": 198,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Living Hoard Midas": {
+      "ver": "1.0.6",
+      "uuid": "47dcac31-3269-4fef-ad43-0140ead8e723",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9bc21341-2d17-430d-85d6-9f832513e457",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -1,
+      "trimX": 0,
+      "trimY": 2,
+      "width": 354,
+      "height": 196,
+      "rawWidth": 356,
+      "rawHeight": 198,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

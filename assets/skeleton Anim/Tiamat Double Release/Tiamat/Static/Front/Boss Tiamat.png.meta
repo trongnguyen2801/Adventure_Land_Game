@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "05dd0000-1eda-452d-98d7-24618b620d6e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 436,
+  "height": 263,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Tiamat": {
+      "ver": "1.0.6",
+      "uuid": "84f15523-206f-46aa-bd51-d00974562330",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "05dd0000-1eda-452d-98d7-24618b620d6e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 436,
+      "height": 263,
+      "rawWidth": 436,
+      "rawHeight": 263,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

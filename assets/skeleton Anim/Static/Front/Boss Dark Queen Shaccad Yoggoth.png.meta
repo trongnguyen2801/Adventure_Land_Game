@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e90d0641-404d-4f27-891b-02693407cc71",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 494,
+  "height": 349,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Dark Queen Shaccad Yoggoth": {
+      "ver": "1.0.6",
+      "uuid": "21a70571-2229-456a-b265-8b58cdb2dc4e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e90d0641-404d-4f27-891b-02693407cc71",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 493,
+      "height": 347,
+      "rawWidth": 494,
+      "rawHeight": 349,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

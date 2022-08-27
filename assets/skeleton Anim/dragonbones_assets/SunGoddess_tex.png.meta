@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "75412ad3-33cd-49b0-9935-01356fea165a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 512,
+  "height": 512,
+  "platformSettings": {},
+  "subMetas": {
+    "SunGoddess_tex": {
+      "ver": "1.0.6",
+      "uuid": "4777a340-ac43-4bd8-8607-80c72fbdff39",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "75412ad3-33cd-49b0-9935-01356fea165a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 65.5,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 509,
+      "height": 379,
+      "rawWidth": 512,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

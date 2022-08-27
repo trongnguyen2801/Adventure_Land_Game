@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "0e3cd913-14ad-4b4a-a825-1f5062f5efb6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 291,
+  "height": 302,
+  "platformSettings": {},
+  "subMetas": {
+    "Sea Mermaid Warrior Undeen": {
+      "ver": "1.0.6",
+      "uuid": "45b4db03-da8a-4308-a46c-80e80379d448",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "0e3cd913-14ad-4b4a-a825-1f5062f5efb6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 4,
+      "offsetY": -3,
+      "trimX": 14,
+      "trimY": 8,
+      "width": 271,
+      "height": 292,
+      "rawWidth": 291,
+      "rawHeight": 302,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

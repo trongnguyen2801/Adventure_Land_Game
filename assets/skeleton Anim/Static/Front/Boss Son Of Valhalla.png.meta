@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "da061a88-c3ef-4ec2-92d2-2c4d3cfc5155",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 559,
+  "height": 336,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Son Of Valhalla": {
+      "ver": "1.0.6",
+      "uuid": "96336091-816c-47b2-9927-f0d2ae359fef",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "da061a88-c3ef-4ec2-92d2-2c4d3cfc5155",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -1,
+      "trimX": 3,
+      "trimY": 2,
+      "width": 555,
+      "height": 334,
+      "rawWidth": 559,
+      "rawHeight": 336,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "db5dd8e2-7651-4d09-9f10-44280887c386",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 178,
+  "height": 293,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Spirit Fighter": {
+      "ver": "1.0.6",
+      "uuid": "cc8da67d-72d7-494e-b739-2fd93b752b22",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "db5dd8e2-7651-4d09-9f10-44280887c386",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 178,
+      "height": 291,
+      "rawWidth": 178,
+      "rawHeight": 293,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

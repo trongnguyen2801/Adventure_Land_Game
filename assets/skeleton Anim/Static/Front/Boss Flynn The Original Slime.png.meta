@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5d4dd5f9-e3e5-4fa0-bc01-232cdf74fbb7",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 348,
+  "height": 274,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Flynn The Original Slime": {
+      "ver": "1.0.6",
+      "uuid": "814e0d8e-30a5-4fb6-bb30-74911c4c5ee1",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5d4dd5f9-e3e5-4fa0-bc01-232cdf74fbb7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 346,
+      "height": 272,
+      "rawWidth": 348,
+      "rawHeight": 274,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -16,16 +16,12 @@ export default class EnemyGreen extends cc.Component {
     @property(cc.Node)
     checkpoint: cc.Node = null;
 
-    // player: Player2 = null;
-
     hp:number = 0;
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         this.hp = 2;
-
-        // this.player = cc.find('Canvas/Player2').getComponent(Player2);
 
         this.anim = this.getComponent(cc.Animation);
         this.anim.on('finished',this.onAnimationFinished,this);
@@ -67,23 +63,30 @@ export default class EnemyGreen extends cc.Component {
         }
 
         this.schedule(function(){
+
             this.anim.play('ob_greean');
             let pos = this.player.getPosition();
-            console.log(pos.x,pos.y);
             let nodePos = this.node.getPosition();
+            console.log(pos.x,pos.y);
 
             if(nodePos.x < pos.x){
+
                 this.node.scaleX = -0.15;
+
                 cc.tween(this.node)
                 .to(2,{position: new cc.Vec3(pos.x,-387,0)})
                 .start();
+
                 console.log("1",pos.x,pos.y);
             }
             else{
+
                 this.node.scaleX = 0.15; 
+
                 cc.tween(this.node) 
                 .to(2,{position: new cc.Vec3(pos.x,-387,0)}) 
                 .start();
+
                 console.log("2",pos.x,pos.y);
             }
         },1);

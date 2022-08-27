@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2d570c74-d830-4956-8ec3-2d707af56cbb",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 500,
+  "height": 362,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss The Horde": {
+      "ver": "1.0.6",
+      "uuid": "6a55af21-4b4b-47f2-a9dc-2c25d775ec09",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2d570c74-d830-4956-8ec3-2d707af56cbb",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -8,
+      "trimX": 1,
+      "trimY": 16,
+      "width": 499,
+      "height": 346,
+      "rawWidth": 500,
+      "rawHeight": 362,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

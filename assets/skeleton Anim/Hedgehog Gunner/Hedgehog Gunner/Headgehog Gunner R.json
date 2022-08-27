@@ -1,0 +1,24 @@
+{"skeleton":{"images":"images/"},
+"bones":[{"name":"root"}],
+"slots":[
+	{"name":"mane","bone":"root","attachment":"mane"},
+	{"name":"Rarm","bone":"root","attachment":"Rarm"},
+	{"name":"gun","bone":"root","attachment":"gun"},
+	{"name":"body","bone":"root","attachment":"body"},
+	{"name":"shadow","bone":"root","attachment":"shadow"},
+	{"name":"Left Arm","bone":"root","attachment":"Left Arm"},
+	{"name":"rleg","bone":"root","attachment":"rleg"}
+],
+"skins":{
+	"default":{
+		"rleg":{"rleg":{"x":90,"y":73,"width":24,"height":30}},
+		"Left Arm":{"Left Arm":{"x":134.5,"y":94.5,"width":43,"height":39}},
+		"shadow":{"shadow":{"x":133.5,"y":19,"width":163,"height":18}},
+		"body":{"body":{"x":138.5,"y":95,"width":119,"height":106}},
+		"gun":{"gun":{"x":45,"y":101,"width":68,"height":36}},
+		"Rarm":{"Rarm":{"x":79,"y":105,"width":40,"height":32}},
+		"mane":{"mane":{"x":135,"y":126.5,"width":128,"height":149}}
+	}
+},
+"animations":{"animation":{}}
+}

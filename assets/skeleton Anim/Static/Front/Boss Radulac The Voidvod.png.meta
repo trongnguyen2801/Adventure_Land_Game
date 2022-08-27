@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9e00dc50-4eb6-44b4-8e59-e6028e75b047",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 673,
+  "height": 445,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Radulac The Voidvod": {
+      "ver": "1.0.6",
+      "uuid": "7042c728-5013-4aea-b91f-de29d942991d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9e00dc50-4eb6-44b4-8e59-e6028e75b047",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 2,
+      "width": 672,
+      "height": 442,
+      "rawWidth": 673,
+      "rawHeight": 445,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d05ffd21-11c5-452a-83de-4b7b65821168",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 587,
+  "height": 431,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Dryad Queen Rafflesia": {
+      "ver": "1.0.6",
+      "uuid": "a6ba056b-4f74-4f5d-8e14-5e76ce020388",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d05ffd21-11c5-452a-83de-4b7b65821168",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 587,
+      "height": 431,
+      "rawWidth": 587,
+      "rawHeight": 431,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

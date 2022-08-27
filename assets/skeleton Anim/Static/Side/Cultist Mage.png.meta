@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "268f65aa-ca0c-43c2-944b-6cd17d98ce29",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 444,
+  "height": 367,
+  "platformSettings": {},
+  "subMetas": {
+    "Cultist Mage": {
+      "ver": "1.0.6",
+      "uuid": "9fd93b35-bb31-49e4-8814-f1e4282bb0a0",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "268f65aa-ca0c-43c2-944b-6cd17d98ce29",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -21,
+      "offsetY": -4,
+      "trimX": 1,
+      "trimY": 9,
+      "width": 400,
+      "height": 357,
+      "rawWidth": 444,
+      "rawHeight": 367,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

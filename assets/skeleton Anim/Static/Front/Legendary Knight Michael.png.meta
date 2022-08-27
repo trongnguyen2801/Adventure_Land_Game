@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "48be3871-f6d3-4cb8-b4b1-a927e8c28785",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 499,
+  "height": 381,
+  "platformSettings": {},
+  "subMetas": {
+    "Legendary Knight Michael": {
+      "ver": "1.0.6",
+      "uuid": "1bececb1-5b4d-4f40-8455-3145c0961e80",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "48be3871-f6d3-4cb8-b4b1-a927e8c28785",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 497,
+      "height": 379,
+      "rawWidth": 499,
+      "rawHeight": 381,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

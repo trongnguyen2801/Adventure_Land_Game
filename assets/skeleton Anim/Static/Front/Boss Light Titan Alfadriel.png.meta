@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "0e1c193b-a437-4b21-8a74-ce2ed6d349e5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 603,
+  "height": 616,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Light Titan Alfadriel": {
+      "ver": "1.0.6",
+      "uuid": "8265becf-cb2f-4a0a-ab30-47be295d3b7f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "0e1c193b-a437-4b21-8a74-ce2ed6d349e5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 1,
+      "trimY": 2,
+      "width": 601,
+      "height": 614,
+      "rawWidth": 603,
+      "rawHeight": 616,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

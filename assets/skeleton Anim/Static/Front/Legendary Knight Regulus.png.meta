@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b490a3b2-c60d-41d5-b591-24ea29c1bbd6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 372,
+  "height": 309,
+  "platformSettings": {},
+  "subMetas": {
+    "Legendary Knight Regulus": {
+      "ver": "1.0.6",
+      "uuid": "e547a0f3-ca95-43f6-8807-36de7140d115",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b490a3b2-c60d-41d5-b591-24ea29c1bbd6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 372,
+      "height": 309,
+      "rawWidth": 372,
+      "rawHeight": 309,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d281a58b-970b-4925-85ac-b9b9e30edac1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 272,
+  "height": 228,
+  "platformSettings": {},
+  "subMetas": {
+    "Clockwork Prototype": {
+      "ver": "1.0.6",
+      "uuid": "cda696da-faff-43e6-bdd0-54722d916268",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d281a58b-970b-4925-85ac-b9b9e30edac1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 272,
+      "height": 228,
+      "rawWidth": 272,
+      "rawHeight": 228,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

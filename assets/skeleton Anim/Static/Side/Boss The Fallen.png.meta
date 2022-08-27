@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6cc73baa-9539-4567-b98f-4b8dc2c65fef",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 391,
+  "height": 250,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss The Fallen": {
+      "ver": "1.0.6",
+      "uuid": "d871b0b5-8de6-4f50-9cdf-c60730e59fd5",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6cc73baa-9539-4567-b98f-4b8dc2c65fef",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1.5,
+      "offsetY": -3,
+      "trimX": 15,
+      "trimY": 6,
+      "width": 364,
+      "height": 244,
+      "rawWidth": 391,
+      "rawHeight": 250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

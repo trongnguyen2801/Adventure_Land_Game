@@ -20,12 +20,6 @@ export default class DryadsArcher extends cc.Component {
 
     is_death:boolean = false;
 
-    @property(cc.Node)
-    checkpoint_range: cc.Node = null;
-
-    @property(cc.Node)
-    checkpoint2range: cc.Node = null;
-
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -39,8 +33,8 @@ export default class DryadsArcher extends cc.Component {
         if(data.name === AnimationState.HIT){
             if(this.hp == 0 || this.hp < 0){
                 this.is_death = true;
-                this.checkpoint_range.destroy();
-                this.checkpoint2range.destroy();
+                this.node.getChildByName('checkpointleafenl').destroy();
+                this.node.getChildByName('checkpointleafenr').destroy();
                 this.node.destroy();
             }
         }
@@ -84,6 +78,11 @@ export default class DryadsArcher extends cc.Component {
     }
 
     arrowAttackLeft(){
+
+        if(this.node.scaleX < 0){
+            this.node.scaleX = 0.5;
+        }
+
         let _arrow_prefab = cc.instantiate(this.arrow_prefab);
         _arrow_prefab.parent = this.node.parent;
         let pos = this.node.getPosition();
@@ -91,12 +90,16 @@ export default class DryadsArcher extends cc.Component {
         _arrow_prefab.scaleY = 0.4;
         _arrow_prefab.setPosition(pos);
         pos.x -= 300;
+
+
         cc.tween(_arrow_prefab)
         .to(2,{position: new cc.Vec3(pos.x,pos.y,0)},{easing:'quartOut'})
         .start();
     }
 
     arrowAttackRight(){
+
+        this.node.scaleX = -0.5
         let _arrow_prefab = cc.instantiate(this.arrow_prefab);
         _arrow_prefab.parent = this.node.parent;
         let pos = this.node.getPosition();
@@ -106,6 +109,8 @@ export default class DryadsArcher extends cc.Component {
 
         _arrow_prefab.setPosition(pos);
         pos.x += 350;
+
+        
         cc.tween(_arrow_prefab)
         .to(2,{position: new cc.Vec3(pos.x,pos.y,0)},{easing:'quartOut'})
         .start();

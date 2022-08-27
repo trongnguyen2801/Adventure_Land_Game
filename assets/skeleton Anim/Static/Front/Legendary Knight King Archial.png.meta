@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8598ade1-1585-4546-ad88-05dda1bd77c3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 570,
+  "height": 409,
+  "platformSettings": {},
+  "subMetas": {
+    "Legendary Knight King Archial": {
+      "ver": "1.0.6",
+      "uuid": "87b697e5-dee1-4959-b845-4fa89f6663de",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8598ade1-1585-4546-ad88-05dda1bd77c3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2,
+      "offsetY": -9,
+      "trimX": 11,
+      "trimY": 24,
+      "width": 544,
+      "height": 379,
+      "rawWidth": 570,
+      "rawHeight": 409,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

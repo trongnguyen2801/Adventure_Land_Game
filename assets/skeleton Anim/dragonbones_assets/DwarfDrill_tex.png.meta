@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e908a780-f6b7-400e-b5fe-ed1251d5f39d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 512,
+  "height": 512,
+  "platformSettings": {},
+  "subMetas": {
+    "DwarfDrill_tex": {
+      "ver": "1.0.6",
+      "uuid": "4e7162c8-3ddd-41b3-a55d-03edd2036c04",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e908a780-f6b7-400e-b5fe-ed1251d5f39d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -21,
+      "offsetY": 45.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 468,
+      "height": 419,
+      "rawWidth": 512,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "520095f1-181a-494f-8878-425f59d075d2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 350,
+  "height": 351,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Goddess Aphrodite": {
+      "ver": "1.0.6",
+      "uuid": "928353f1-cdfe-40aa-a47a-09c761b1b6a6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "520095f1-181a-494f-8878-425f59d075d2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1.5,
+      "trimX": 1,
+      "trimY": 3,
+      "width": 348,
+      "height": 348,
+      "rawWidth": 350,
+      "rawHeight": 351,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

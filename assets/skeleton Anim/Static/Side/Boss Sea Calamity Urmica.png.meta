@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f81ed232-f9ec-4414-9ab7-0d4340a75311",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 754,
+  "height": 672,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Sea Calamity Urmica": {
+      "ver": "1.0.6",
+      "uuid": "f27794dc-7c57-4a54-85b2-61ab67892d41",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f81ed232-f9ec-4414-9ab7-0d4340a75311",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -1,
+      "trimX": 1,
+      "trimY": 3,
+      "width": 753,
+      "height": 668,
+      "rawWidth": 754,
+      "rawHeight": 672,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

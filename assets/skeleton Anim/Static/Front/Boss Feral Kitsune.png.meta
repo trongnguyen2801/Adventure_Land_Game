@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9522fc1e-c8bb-4b13-9252-820905530d8c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 592,
+  "height": 402,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Feral Kitsune": {
+      "ver": "1.0.6",
+      "uuid": "463d9d38-501b-47d2-9cd5-1cd737c6024f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9522fc1e-c8bb-4b13-9252-820905530d8c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 2,
+      "width": 590,
+      "height": 399,
+      "rawWidth": 592,
+      "rawHeight": 402,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

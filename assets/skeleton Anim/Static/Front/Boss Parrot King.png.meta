@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "11ddd3cc-8f89-4dd1-b28a-3737fbdd7834",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 580,
+  "height": 547,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Parrot King": {
+      "ver": "1.0.6",
+      "uuid": "6a1ef1c8-a06b-4486-a842-b4448c408454",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "11ddd3cc-8f89-4dd1-b28a-3737fbdd7834",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 579,
+      "height": 545,
+      "rawWidth": 580,
+      "rawHeight": 547,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

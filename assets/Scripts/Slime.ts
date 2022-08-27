@@ -1,4 +1,3 @@
-import Player2 from "./Player2";
 const {ccclass, property} = cc._decorator;
 
 export enum AnimationState{
@@ -18,10 +17,7 @@ export default class Slime extends cc.Component {
 
     is_death:boolean = false;
 
-    @property(cc.Node)
-    checkpoint: cc.Node = null;
 
-    // player: Player2 = null;
 
     hp:number = 0;
 
@@ -29,8 +25,6 @@ export default class Slime extends cc.Component {
 
     onLoad () {
         this.hp = 2;
-
-        // this.player = cc.find('Canvas/Player2').getComponent(Player2);
 
         this.anim = this.getComponent(cc.Animation);
         this.anim.play(AnimationState.IDLE);
@@ -42,7 +36,6 @@ export default class Slime extends cc.Component {
             if(this.hp == 0 || this.hp < 0){
                 this.is_death = true;
                 this.node.destroy();
-                // this.checkpoint.destroy();
             }
         }
     };
@@ -68,8 +61,7 @@ export default class Slime extends cc.Component {
 
     attack(is_attack){
         if(is_attack){
-            // this.node.active = true;
-            this.checkpoint.destroy();
+            this.node.getChildByName('checkpointslime').destroy();
         }
         this.schedule(function(){
             this.anim.play(AnimationState.IDLE);
