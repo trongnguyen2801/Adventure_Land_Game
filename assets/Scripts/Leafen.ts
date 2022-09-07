@@ -8,10 +8,12 @@ export enum AnimationState{
 }
 
 @ccclass
-export default class DryadsArcher extends cc.Component {
+export default class Leafen extends cc.Component {
 
     @property(cc.Animation)
     anim: cc.Animation = null;
+
+    public static intance: Leafen;
 
     @property(cc.Prefab)
     arrow_prefab: cc.Prefab = null;
@@ -23,6 +25,7 @@ export default class DryadsArcher extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        Leafen.intance = this;
         this.hp = 2;
         this.anim = this.getComponent(cc.Animation);
         this.anim.on('finished',this.onAnimationFinished,this);

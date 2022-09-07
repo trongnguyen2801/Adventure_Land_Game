@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d859ec7b-2655-463d-b8c6-28679c2fe6e6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "SpellBookPreface_04": {
+      "ver": "1.0.6",
+      "uuid": "1b61e0fb-f8e8-40f1-8b2f-312d9958ed11",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d859ec7b-2655-463d-b8c6-28679c2fe6e6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

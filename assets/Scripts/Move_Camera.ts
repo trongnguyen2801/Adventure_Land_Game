@@ -9,7 +9,7 @@ export default class Camera extends cc.Component {
 
     update (dt) {
 
-        let target_position = cc.v2(this.player_node.getPosition().x,this.player_node.getPosition().y + 150);
+        let target_position = cc.v2(this.player_node.getPosition().x,this.player_node.getPosition().y + 100);
         let current_position = this.node.getPosition();
         if(this.player_node.getPosition().y < 1920){
             current_position.lerp(target_position,0.1,current_position);

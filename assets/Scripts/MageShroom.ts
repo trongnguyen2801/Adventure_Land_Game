@@ -18,9 +18,12 @@ export default class MageShroom extends cc.Component {
     @property(cc.Animation)
     anim: cc.Animation = null;
 
+    public static intance: MageShroom;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        MageShroom.intance = this;
         this.anim = this.getComponent(cc.Animation);
         this.anim.play(AnimationState.IDLE);
         this.hp = 4;

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "83e43567-0e9d-49c2-914b-d91cea312d98",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 511,
+  "height": 480,
+  "platformSettings": {},
+  "subMetas": {
+    "clown_export-sword_attack_16": {
+      "ver": "1.0.6",
+      "uuid": "42d367b3-350d-4947-8454-fa133bc10ad2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "83e43567-0e9d-49c2-914b-d91cea312d98",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 9,
+      "offsetY": -29.5,
+      "trimX": 78,
+      "trimY": 100,
+      "width": 373,
+      "height": 339,
+      "rawWidth": 511,
+      "rawHeight": 480,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

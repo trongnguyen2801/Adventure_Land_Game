@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b039d496-64b3-4a1b-955e-445447a13eea",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 288,
+  "height": 384,
+  "platformSettings": {},
+  "subMetas": {
+    "$Thanatos": {
+      "ver": "1.0.6",
+      "uuid": "db898da8-bf64-4841-b66e-d915808b6e26",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b039d496-64b3-4a1b-955e-445447a13eea",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 70.5,
+      "trimX": 1,
+      "trimY": 55,
+      "width": 287,
+      "height": 133,
+      "rawWidth": 288,
+      "rawHeight": 384,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -18,9 +18,13 @@ export default class Novus extends cc.Component {
 
     @property(cc.Prefab)
     iceArrow: cc.Prefab = null;
+
+    public static intance: Novus;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        Novus.intance = this;
         this.anim = this.getComponent(cc.Animation);
         this.anim.play('novusidle');
         this.hp = 6;

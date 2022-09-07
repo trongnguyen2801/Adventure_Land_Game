@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1aeaa46b-b2d4-4bc0-bb5e-422b041a015e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 736,
+  "height": 545,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Grand Sorceress Duessa": {
+      "ver": "1.0.6",
+      "uuid": "e8a99f8e-3027-4d42-bd50-b4012115a11c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1aeaa46b-b2d4-4bc0-bb5e-422b041a015e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 733,
+      "height": 544,
+      "rawWidth": 736,
+      "rawHeight": 545,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

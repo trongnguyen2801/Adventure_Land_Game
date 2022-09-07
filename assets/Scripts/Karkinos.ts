@@ -17,7 +17,9 @@ export default class Karkinos extends cc.Component {
 
     hp:number = null;
 
-    checkStop: boolean = false
+    checkStop: boolean = false;
+
+    public static intance: Karkinos;
 
     @property(dragonBones.ArmatureDisplay)
     armatureDisplay: dragonBones.ArmatureDisplay = null;
@@ -27,6 +29,7 @@ export default class Karkinos extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        Karkinos.intance = this;
         this.hp = 2;
         this.armatureDisplay = this.getComponent(dragonBones.ArmatureDisplay);
 

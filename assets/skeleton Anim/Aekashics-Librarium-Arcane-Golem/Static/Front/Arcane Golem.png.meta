@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5f3daf62-1ca4-47ab-bbb8-7c37804fa6da",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 640,
+  "height": 565,
+  "platformSettings": {},
+  "subMetas": {
+    "Arcane Golem": {
+      "ver": "1.0.6",
+      "uuid": "c285d307-b05d-44f1-9974-16e93e8fe692",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5f3daf62-1ca4-47ab-bbb8-7c37804fa6da",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 640,
+      "height": 565,
+      "rawWidth": 640,
+      "rawHeight": 565,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

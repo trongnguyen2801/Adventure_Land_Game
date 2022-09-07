@@ -16,11 +16,14 @@ export default class EnemyGreen extends cc.Component {
     @property(cc.Node)
     checkpoint: cc.Node = null;
 
+    public static intance: EnemyGreen;
+
     hp:number = 0;
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        EnemyGreen.intance = this;
         this.hp = 2;
 
         this.anim = this.getComponent(cc.Animation);

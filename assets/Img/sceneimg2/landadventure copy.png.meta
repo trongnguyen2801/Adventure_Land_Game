@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "63830e90-7a4a-4d36-9cba-d6279a1b0dff",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 599,
+  "height": 359,
+  "platformSettings": {},
+  "subMetas": {
+    "landadventure copy": {
+      "ver": "1.0.6",
+      "uuid": "23750f3a-f04a-416f-956e-ce3da404ef26",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "63830e90-7a4a-4d36-9cba-d6279a1b0dff",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 9.5,
+      "offsetY": -2.5,
+      "trimX": 19,
+      "trimY": 9,
+      "width": 580,
+      "height": 346,
+      "rawWidth": 599,
+      "rawHeight": 359,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

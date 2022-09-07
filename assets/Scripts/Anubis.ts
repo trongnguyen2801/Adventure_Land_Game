@@ -26,18 +26,11 @@ export default class Anubis extends cc.Component {
     @property(cc.Prefab)
     airBlade:cc.Prefab = null;
 
-    @property(cc.Node)
-    checkpoint:cc.Node = null;
-
-    @property(cc.Node)
-    warning: cc.Node = null;
-
-    @property(cc.Node)
-    checkpointAirBlade:cc.Node = null;
-
     hp:number = null;
 
     charState: number = StateChar.NONE;
+
+    public static intance: Anubis; 
 
 
     // LIFE-CYCLE CALLBACKS:
@@ -45,6 +38,7 @@ export default class Anubis extends cc.Component {
     onLoad () { 
         this.anim = this.getComponent(cc.Animation);
         this.hp = 10;
+        Anubis.intance = this;
     }
 
     onAnimationFinished(event, data){
@@ -83,43 +77,63 @@ export default class Anubis extends cc.Component {
             // airblade_prefab.setScale(0.5,0.5);
             airblade_prefab.parent = this.node.parent;
             let _pos = this.node.getPosition();
-            airblade_prefab.setPosition(_pos);
+            airblade_prefab.setPosition(_pos.x-70,_pos.y);
 
 
             this.scheduleOnce(function(){
                 cc.tween(airblade_prefab)
                 .to(0.5,{position: new cc.Vec3 (_pos.x-500 ,_pos.y-50,0)}, {easing:'quartOut'})
                 .start();
-            },0.5)
+            },0.5);
+            this.scheduleOnce(function (){
+                airblade_prefab.destroy();
+            },1);
         }
     }
 
     appearAnubis(check){
         if(check){      
+
             if(this.charState  === StateChar.NONE){
+
                 this.charState = StateChar.APPEAR;
-                this.warning.active = true;
-                this.checkpointAirBlade.getComponent(cc.BoxCollider).size.width = 40;
-                this.checkpointAirBlade.getComponent(cc.BoxCollider).size.height = 100;
+                let warning = this.node.getChildByName("warning");
+                let pos = this.node.getPosition();
+                warning.parent = this.node.parent;
+                warning.setPosition(pos.x-200,pos.y);
+                warning.active = true;
+                let checkpoint = this.node.getChildByName("checkpointAirBlade");
+
     
                 this.scheduleOnce(function(){
-                    this.warning.destroy();
+                    warning.destroy();
+                },2.5);
+                this.scheduleOnce(function(){
+                    this.scheduleOnce(function(){
+                        this.node.opacity = 100;
+                    },0.5);
+                    this.scheduleOnce(function(){
+                        this.node.opacity = 150;
+                    },0.6);
+                    this.scheduleOnce(function(){
+                        this.node.opacity = 255;
+                    },0.7);
+
+                    this.anim.play(AnimationState.APPEAR);
                     let pos = this.node.getPosition();
                     let carpet_prefab = cc.instantiate(this.carpetfire);
                     carpet_prefab.parent = this.node.parent;
                     carpet_prefab.opacity = 200;
                     carpet_prefab.setPosition(pos);
         
-                    this.scheduleOnce(function(){
-                        this.node.active = true;
-                        this.anim.play(AnimationState.APPEAR);
-                    },0.15);
         
                     this.scheduleOnce(function(){
                         carpet_prefab.destroy();
-                        this.checkpoint.destroy();
-                    },0.75);
-                },2);
+                        checkpoint.active = true;
+                        checkpoint.getComponent(cc.BoxCollider).size.height = 100;
+                        checkpoint.getComponent(cc.BoxCollider).size.width = 40;
+                    },2);
+                },2.5);
             }
         }
     }

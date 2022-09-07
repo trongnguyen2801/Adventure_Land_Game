@@ -16,9 +16,12 @@ export default class Scorpion extends cc.Component {
 
     @property(dragonBones.ArmatureDisplay)
     armatureDisplay: dragonBones.ArmatureDisplay = null;
+
+    public static intance: Scorpion;
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        Scorpion.intance = this;
         this.hp = 5;
         this.armatureDisplay = this.getComponent(dragonBones.ArmatureDisplay);
     }
@@ -76,7 +79,7 @@ export default class Scorpion extends cc.Component {
             this.scheduleOnce(function(){
                 this.armatureDisplay.playAnimation(Anim.IDLE,50);
             },1.5);
-            }
+        }
 
     }
 
@@ -103,5 +106,9 @@ export default class Scorpion extends cc.Component {
         },1.5);
     }
 
-    // update (dt) {}
+    update (dt) {
+        if(this.hp < 0 || this.hp ==0){
+            this.node.destroy();
+        }
+    }
 }

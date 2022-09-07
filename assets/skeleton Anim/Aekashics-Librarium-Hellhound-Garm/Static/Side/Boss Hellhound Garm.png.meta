@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "bb2cbc35-64d9-4406-bbc9-6883af7db6a5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 353,
+  "height": 324,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Hellhound Garm": {
+      "ver": "1.0.6",
+      "uuid": "4bf36f15-e7b2-4881-8926-7aa921745092",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "bb2cbc35-64d9-4406-bbc9-6883af7db6a5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 352,
+      "height": 324,
+      "rawWidth": 353,
+      "rawHeight": 324,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

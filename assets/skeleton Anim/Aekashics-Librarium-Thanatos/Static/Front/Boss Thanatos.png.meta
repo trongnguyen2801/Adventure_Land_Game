@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "520d1dd0-6edf-4f23-9202-42b520eaf3d3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 748,
+  "height": 636,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Thanatos": {
+      "ver": "1.0.6",
+      "uuid": "4325d6e6-2940-4026-808e-5732b15c3f25",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "520d1dd0-6edf-4f23-9202-42b520eaf3d3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -41.5,
+      "trimX": 0,
+      "trimY": 84,
+      "width": 746,
+      "height": 551,
+      "rawWidth": 748,
+      "rawHeight": 636,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

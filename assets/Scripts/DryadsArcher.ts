@@ -27,9 +27,12 @@ export default class DryadsArcher extends cc.Component {
     @property(cc.Node)
     checkpoint2: cc.Node = null;
 
+    public static intance; DryadsArcher;
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        DryadsArcher.intance = this;
         this.hp = 2;
         this.anim = this.getComponent(cc.Animation);
         this.anim.on('finished',this.onAnimationFinished,this);

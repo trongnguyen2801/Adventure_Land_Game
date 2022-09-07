@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a08d7168-2f7c-4340-a45c-d894f6b83cb5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 706,
+  "height": 524,
+  "platformSettings": {},
+  "subMetas": {
+    "Boss Zeograth": {
+      "ver": "1.0.6",
+      "uuid": "4cff4dd2-d614-47a1-8c1f-2f7c38cae22c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a08d7168-2f7c-4340-a45c-d894f6b83cb5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 704,
+      "height": 522,
+      "rawWidth": 706,
+      "rawHeight": 524,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

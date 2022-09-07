@@ -26,9 +26,12 @@ export default class DragonChild extends cc.Component {
 
     @property(cc.Node)
     checkpoint2: cc.Node = null;
+
+    public static intance: DragonChild;
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        DragonChild.intance = this;
         this.hp = 2;
         this.anim.play(AnimationState.IDLE);
         this.anim = this.getComponent(cc.Animation);

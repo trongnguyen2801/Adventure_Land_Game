@@ -16,6 +16,7 @@ export default class Poseidon extends cc.Component {
 
     hp:number = null;
 
+    public static intance:Poseidon ;
     
     @property(cc.Prefab)
     dialogue: cc.Prefab = null;
@@ -47,6 +48,7 @@ export default class Poseidon extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        Poseidon.intance = this;
         this.hp = 5;
         this.armatureDisplay = this.getComponent(dragonBones.ArmatureDisplay);
     }
