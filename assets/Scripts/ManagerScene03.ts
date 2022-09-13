@@ -20,13 +20,13 @@ export default class ManagerScene03 extends cc.Component {
     @property(cc.Prefab)
     stone: cc.Prefab = null;
 
-    public static intance: ManagerScene03;
+    public static instance: ManagerScene03;
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
 
-        ManagerScene03.intance = this;
+        ManagerScene03.instance = this;
 
     }
 

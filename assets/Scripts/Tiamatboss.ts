@@ -12,9 +12,15 @@ export enum Anim{
     ATTACK = 1,
 }
 
+export enum StateChar{
+    APPEAR = 1,
+    NONE = 0,
+}
+
+
+
 @ccclass
 export default class Tiamat extends cc.Component {
-
 
     hp:number = null;
     count:number = null;
@@ -22,15 +28,29 @@ export default class Tiamat extends cc.Component {
     @property(dragonBones.ArmatureDisplay)
     armatureDisplay: dragonBones.ArmatureDisplay = null;
 
+    @property(cc.Node)
+    checkAppear:cc.Node = null;
+
+    @property(cc.Node)
+    teleportPoint:cc.Node = null;
+
+    @property(cc.Prefab)
+    carpetfire:cc.Prefab = null;
+
     @property(cc.Prefab)
     tiamatU:cc.Prefab = null;
-    spellState: number = null;
 
-    public static intance: Tiamat;
+    @property(cc.Prefab)
+    key:cc.Prefab = null;
+
+    spellState: number = null;
+    charState: number = StateChar.NONE;
+
+    public static instance: Tiamat;
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        Tiamat.intance = this;
+        Tiamat.instance = this;
         this.spellState = Anim.NONE;
         this.hp = 10;
         this.count = 0;
@@ -55,6 +75,66 @@ export default class Tiamat extends cc.Component {
         if(other.node.group === 'thunder' && other.tag === 30 && self.tag == 0){
             this.hp -= 2;
             this.armatureDisplay.playAnimation(Anim.HIT,1);
+        }
+    }
+
+    spawnKey(i){
+        let key = cc.instantiate(this.key);
+        key.parent = this.node.parent;
+        let pos = this.node.getPosition();
+        pos.x+= 20;
+        pos.y += 20;
+        key.setPosition(pos);
+    }
+
+
+    appearTiamatBoss(check){
+        if(check){      
+
+            if(this.charState  === StateChar.NONE){
+
+                this.charState = StateChar.APPEAR;
+                let warning = this.node.getChildByName("warning");
+                let pos = this.node.getPosition();
+                warning.parent = this.node.parent;
+                warning.setPosition(pos.x-400,pos.y+100);
+                warning.active = true;
+
+    
+                this.scheduleOnce(function(){
+                    warning.destroy();
+                },2.5);
+                this.scheduleOnce(function(){
+                    this.scheduleOnce(function(){
+                        this.node.opacity = 100;
+                    },0.5);
+                    this.scheduleOnce(function(){
+                        this.node.opacity = 150;
+                    },0.6);
+                    this.scheduleOnce(function(){
+                        this.node.opacity = 255;
+                    },0.7);
+
+                    let pos = this.node.getPosition();
+                    let carpet_prefab = cc.instantiate(this.carpetfire);
+                    carpet_prefab.parent = this.node.parent;
+                    carpet_prefab.opacity = 200;
+                    carpet_prefab.setPosition(pos.x,pos.y+50);
+        
+        
+                    this.scheduleOnce(function(){
+                        carpet_prefab.destroy();
+                        this.node.getChildByName("checkga").active = true;
+                        this.node.getChildByName("checksl").active = true;
+                        this.checkAppear.destroy();
+                        this.node.getComponent(cc.BoxCollider).size.width = 621;
+                        this.node.getComponent(cc.BoxCollider).size.height = 682;
+                        this.node.getComponent(cc.BoxCollider).offset.x = 58;
+                        this.node.getComponent(cc.BoxCollider).offset.y = 318;
+                        this.node.getComponent(cc.BoxCollider).tag = 0;
+                    },1.2);
+                },2.5);
+            }
         }
     }
 
@@ -165,7 +245,9 @@ export default class Tiamat extends cc.Component {
         }
 
         if(this.hp < 0 || this.hp == 0){
+            this.spawnKey(1);
             this.node.destroy();
+            this.teleportPoint.active = true;
         }
     }
 }

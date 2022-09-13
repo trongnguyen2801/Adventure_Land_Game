@@ -7,7 +7,8 @@
     "enemy",
     "checkpoint",
     "thunder",
-    "NPC"
+    "NPC",
+    "Artifact"
   ],
   "collision-matrix": [
     [
@@ -28,7 +29,8 @@
       true,
       true,
       null,
-      false
+      true,
+      true
     ],
     [
       true,
@@ -37,6 +39,7 @@
       null,
       true,
       null,
+      true,
       true,
       true
     ],
@@ -48,6 +51,7 @@
       null,
       null,
       true,
+      true,
       true
     ],
     [
@@ -79,9 +83,20 @@
     ],
     [
       true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    [
       false,
       true,
       true,
+      true,
+      false,
       false,
       false,
       false,

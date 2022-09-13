@@ -18,12 +18,12 @@ export default class TiamatU extends cc.Component {
     @property(dragonBones.ArmatureDisplay)
     armatureDisplay: dragonBones.ArmatureDisplay = null;
 
-    public static intance: TiamatU;
+    public static instance: TiamatU;
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        TiamatU.intance = this;
+        TiamatU.instance = this;
         this.hp = 2;
         this.combo = 0;
         this.armatureDisplay.playAnimation(Anim.IDLE,50);

@@ -22,24 +22,25 @@ export default class SeaMermaid extends cc.Component {
     @property(cc.Animation)
     anim: cc.Animation = null;
 
+    @property(cc.Node)
+    checkpointmermaid: cc.Node = null;
+
     StateMermaid: number;
 
-    public static intance: SeaMermaid;
+    public static instance: SeaMermaid;
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         this.anim = this.getComponent(cc.Animation);
         this.StateMermaid = SeaMermaidState.NONE;
-        SeaMermaid.intance = this;
+        SeaMermaid.instance = this;
 
 
     }
 
     appearMermaid(check){
         if(check){
-
-
             this.scheduleOnce(function(){
                 this.node.opacity = 100;
             },0.5);
@@ -51,11 +52,8 @@ export default class SeaMermaid extends cc.Component {
             },1.25);
 
             this.scheduleOnce(function(){
-                // var dialogue_prefab = cc.instantiate(this.dialogue);
-                // this.dialogue.parent = this.node.parent;
-                // let _pos = this.node.getPosition();
-                // this.dialogue.setPosition(_pos.x-100, _pos.y-90);
                 this.dialogue.active = true;
+                this.checkpointmermaid.destroy();
             },1.1);
 
             this.scheduleOnce(function(){

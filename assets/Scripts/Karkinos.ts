@@ -19,17 +19,20 @@ export default class Karkinos extends cc.Component {
 
     checkStop: boolean = false;
 
-    public static intance: Karkinos;
+    public static instance: Karkinos;
 
     @property(dragonBones.ArmatureDisplay)
     armatureDisplay: dragonBones.ArmatureDisplay = null;
+
+    @property(cc.Prefab)
+    key:cc.Prefab = null;
 
 
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        Karkinos.intance = this;
+        Karkinos.instance = this;
         this.hp = 2;
         this.armatureDisplay = this.getComponent(dragonBones.ArmatureDisplay);
 
@@ -42,7 +45,14 @@ export default class Karkinos extends cc.Component {
 
     }
 
-
+    spawnKey(i){
+        let key = cc.instantiate(this.key);
+        key.parent = this.node.parent;
+        let pos = this.node.getPosition();
+        pos.x+= 20;
+        pos.y += 20;
+        key.setPosition(pos);
+    }
 
     move(){
         let pos = this.node.getPosition();
@@ -62,6 +72,7 @@ export default class Karkinos extends cc.Component {
     onAnimationFinished(event, data){
         if(data.name === Anim.HIT){
             if(this.hp == 0 || this.hp < 0){
+                this.spawnKey(1);
                 this.node.destroy();
             }
         }

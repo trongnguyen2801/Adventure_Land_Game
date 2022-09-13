@@ -8,7 +8,7 @@ export enum AnimationState{
 @ccclass
 export default class Slime extends cc.Component {
 
-    public static intance: Slime;
+    public static instance: Slime;
     @property(cc.Animation)
     anim:cc.Animation = null;
 
@@ -24,7 +24,7 @@ export default class Slime extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        Slime.intance = this;
+        Slime.instance = this;
         this.hp = 2;
 
         this.anim = this.getComponent(cc.Animation);

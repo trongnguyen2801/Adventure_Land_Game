@@ -1,5 +1,5 @@
 import { CheckpointTag } from "./Player2";
-
+import PointTele from "./PointTele";
 const {ccclass, property} = cc._decorator;
 
 export enum AnimationState{
@@ -26,19 +26,21 @@ export default class Anubis extends cc.Component {
     @property(cc.Prefab)
     airBlade:cc.Prefab = null;
 
-    hp:number = null;
+    hp:number = 0;
 
     charState: number = StateChar.NONE;
 
-    public static intance: Anubis; 
+    public static instance: Anubis;
 
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () { 
         this.anim = this.getComponent(cc.Animation);
-        this.hp = 10;
-        Anubis.intance = this;
+        this.hp = 15;
+        Anubis.instance = this;
+
+        this.anim.on('finished',this.onAnimationFinished,this);
     }
 
     onAnimationFinished(event, data){
@@ -56,16 +58,19 @@ export default class Anubis extends cc.Component {
     onCollisionEnter(other, self){
         if(other.node.group === 'player' && other.tag === 5){
             this.hp--;
+            console.log(this.hp);
             this.anim.play(AnimationState.HIT);
         }
 
         if(other.node.group === 'thunder' && other.tag === 35){
             this.hp -= 2;
+            console.log(this.hp);
             this.anim.play(AnimationState.HIT);
         }
 
         if(other.node.group === 'thunder' && other.tag === 30){
             this.hp -= 2;
+            console.log(this.hp);
             this.anim.play(AnimationState.HIT);
         }
     }
@@ -132,7 +137,7 @@ export default class Anubis extends cc.Component {
                         checkpoint.active = true;
                         checkpoint.getComponent(cc.BoxCollider).size.height = 100;
                         checkpoint.getComponent(cc.BoxCollider).size.width = 40;
-                    },2);
+                    },1.2);
                 },2.5);
             }
         }

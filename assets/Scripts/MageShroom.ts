@@ -18,12 +18,15 @@ export default class MageShroom extends cc.Component {
     @property(cc.Animation)
     anim: cc.Animation = null;
 
-    public static intance: MageShroom;
+    @property(cc.Prefab)
+    key:cc.Prefab = null;
+
+    public static instance: MageShroom;
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        MageShroom.intance = this;
+        MageShroom.instance = this;
         this.anim = this.getComponent(cc.Animation);
         this.anim.play(AnimationState.IDLE);
         this.hp = 4;
@@ -49,6 +52,15 @@ export default class MageShroom extends cc.Component {
             this.hp -= 2;
             this.anim.play(AnimationState.HIT);
         }
+    }
+
+    spawnKey(i){
+        let key = cc.instantiate(this.key);
+        key.parent = this.node.parent;
+        let pos = this.node.getPosition();
+        pos.x+= 20;
+        pos.y += 20;
+        key.setPosition(pos);
     }
 
     attackLeft(check){
@@ -96,5 +108,10 @@ export default class MageShroom extends cc.Component {
         }
     }
 
-    // update (dt) {}
+    update (dt) {
+        if(this.hp < 0 || this.hp == 0){
+            this.spawnKey(1);
+            this.node.destroy();
+        }
+    }
 }

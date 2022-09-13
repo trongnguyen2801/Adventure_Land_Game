@@ -27,11 +27,14 @@ export default class DragonChild extends cc.Component {
     @property(cc.Node)
     checkpoint2: cc.Node = null;
 
-    public static intance: DragonChild;
+    @property(cc.Prefab)
+    key: cc.Prefab = null;
+
+    public static instance: DragonChild;
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        DragonChild.intance = this;
+        DragonChild.instance = this;
         this.hp = 2;
         this.anim.play(AnimationState.IDLE);
         this.anim = this.getComponent(cc.Animation);
@@ -41,6 +44,7 @@ export default class DragonChild extends cc.Component {
     onAnimationFinished(event, data){
         if(data.name === AnimationState.HIT){
             if(this.hp == 0 || this.hp < 0){
+                this.spawnKey(1);
                 this.is_death = true;
                 this.checkpoint.destroy();
                 this.checkpoint2.destroy();
@@ -64,6 +68,15 @@ export default class DragonChild extends cc.Component {
             this.hp = 0;
             this.anim.play(AnimationState.HIT);
         }
+    }
+
+    spawnKey(i){
+        let key = cc.instantiate(this.key);
+        key.parent = this.node.parent;
+        let pos = this.node.getPosition();
+        pos.x+= 20;
+        pos.y += 20;
+        key.setPosition(pos);
     }
 
     

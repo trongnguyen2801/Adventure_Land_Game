@@ -15,6 +15,12 @@ export default class IceArrow extends cc.Component {
         },1)
     }
 
+    onCollisionEnter(other, self){
+        if(other.node.group === 'player' && other.tag === 50){
+            this.node.destroy();
+        }
+    }
+
     start () {
 
     }

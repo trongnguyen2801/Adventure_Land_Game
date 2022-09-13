@@ -27,12 +27,15 @@ export default class DryadsArcher extends cc.Component {
     @property(cc.Node)
     checkpoint2: cc.Node = null;
 
-    public static intance; DryadsArcher;
+    @property(cc.Prefab)
+    key:cc.Prefab = null;
+
+    public static instance; DryadsArcher;
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        DryadsArcher.intance = this;
+        DryadsArcher.instance = this;
         this.hp = 2;
         this.anim = this.getComponent(cc.Animation);
         this.anim.on('finished',this.onAnimationFinished,this);
@@ -42,6 +45,7 @@ export default class DryadsArcher extends cc.Component {
     onAnimationFinished(event, data){
         if(data.name === AnimationState.DRYADSHIT){
             if(this.hp == 0 || this.hp < 0){
+                this.spawnKey(1);
                 this.is_death = true;
                 this.checkpoint.destroy();
                 this.checkpoint2.destroy();
@@ -69,6 +73,15 @@ export default class DryadsArcher extends cc.Component {
             this.hp = 0;
             this.anim.play(AnimationState.DRYADSHIT);
         }
+    }
+
+    spawnKey(i){
+        let key = cc.instantiate(this.key);
+        key.parent = this.node.parent;
+        let pos = this.node.getPosition();
+        pos.x+= 20;
+        pos.y += 20;
+        key.setPosition(pos);
     }
 
     throwArrowPlayer(check:boolean){

@@ -16,7 +16,7 @@ export default class Poseidon extends cc.Component {
 
     hp:number = null;
 
-    public static intance:Poseidon ;
+    public static instance:Poseidon ;
     
     @property(cc.Prefab)
     dialogue: cc.Prefab = null;
@@ -48,8 +48,8 @@ export default class Poseidon extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        Poseidon.intance = this;
-        this.hp = 5;
+        Poseidon.instance = this;
+        this.hp = 10;
         this.armatureDisplay = this.getComponent(dragonBones.ArmatureDisplay);
     }
 
@@ -98,14 +98,6 @@ export default class Poseidon extends cc.Component {
                 this.node.getComponent(cc.PolygonCollider).enabled = true;
 
             },5);
-        }
-    }
-    
-    onAnimationFinished(event, data){
-        if(data.name === Anim.HIT){
-            if(this.hp == 0 || this.hp < 0){
-                this.node.destroy();
-            }
         }
     }
 
@@ -278,5 +270,15 @@ export default class Poseidon extends cc.Component {
 
             this.armatureDisplay.playAnimation(Anim.IDLE,10);
         },1);
+    }
+
+    protected update(dt: number): void {
+        if(this.hp == 0 || this.hp < 0){
+            this.node.destroy();
+            this.checkAT.destroy();
+            this.checkAT2.destroy();
+            this.checkSpell.destroy();
+            this.checkSpell2.destroy();
+        }
     }
 }

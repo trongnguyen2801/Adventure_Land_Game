@@ -10,8 +10,6 @@ export default class TextLable extends cc.Component {
     @property
     text:string = '';
 
-    @property(cc.Node)
-    labeltext:cc.Node = null;
 
     @property({
         tooltip:"tesstttt",
@@ -41,9 +39,6 @@ export default class TextLable extends cc.Component {
 
             },self.duration*(i));
         }
-        this.scheduleOnce(function(){
-            this.labeltext.active = true;
-        },1.3)
     }
 
     // start () {

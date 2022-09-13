@@ -17,11 +17,14 @@ export default class Scorpion extends cc.Component {
     @property(dragonBones.ArmatureDisplay)
     armatureDisplay: dragonBones.ArmatureDisplay = null;
 
-    public static intance: Scorpion;
+    @property(cc.Prefab)
+    key:cc.Prefab = null;
+
+    public static instance: Scorpion;
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        Scorpion.intance = this;
+        Scorpion.instance = this;
         this.hp = 5;
         this.armatureDisplay = this.getComponent(dragonBones.ArmatureDisplay);
     }
@@ -34,6 +37,7 @@ export default class Scorpion extends cc.Component {
     onAnimationFinished(event, data){
         if(data.name === Anim.HIT){
             if(this.hp == 0 || this.hp < 0){
+                this.spawnKey(1);
                 this.node.destroy();
             }
         }
@@ -54,6 +58,15 @@ export default class Scorpion extends cc.Component {
             this.hp -= 2;
             this.armatureDisplay.playAnimation(Anim.HIT,1);
         }
+    }
+
+    spawnKey(i){
+        let key = cc.instantiate(this.key);
+        key.parent = this.node.parent;
+        let pos = this.node.getPosition();
+        pos.x+= 20;
+        pos.y += 20;
+        key.setPosition(pos);
     }
 
     attackLeft(check){

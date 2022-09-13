@@ -2,10 +2,15 @@
 // import Player2 from "./Player2";
 const {ccclass, property} = cc._decorator;
 
+export enum LoadLevelState{
+    LOAD = 1,
+    NONE = 0,
+}
+
 @ccclass
 export default class GameManager extends cc.Component {
 
-    public reachLevel: number = 3;
+    public reachLevel: number = 2;
 
     public static instance: GameManager;
 
@@ -14,6 +19,8 @@ export default class GameManager extends cc.Component {
     @property(cc.Node)
     player:cc.Node = null;
 
+    loadState:number = null
+
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -21,6 +28,8 @@ export default class GameManager extends cc.Component {
         let physic_manager = cc.director.getPhysicsManager();
         physic_manager.enabled = true;
         physic_manager.gravity = cc.v2(0,-2000); 
+
+        this.loadState = LoadLevelState.NONE;
 
         //active debugDrawPhysics
         physic_manager.debugDrawFlags = 1;
@@ -40,17 +49,9 @@ export default class GameManager extends cc.Component {
     @property(cc.Node)
     private levelContainer: cc.Node = null;
 
-    private nextLevel(){
-        this.LoadLevel(this.reachLevel+1);
-    }
+    // reLoadLevel(){
 
-    returnLevel(){
-        this.LoadLevel(this.reachLevel);
-    }
-
-    reLoadLevel(){
-
-    }
+    // }
     
     LoadLevel(LevelNo: number) {
 
@@ -84,6 +85,7 @@ export default class GameManager extends cc.Component {
     }
 
     currentLevelData:number = null;
+
     private OnLoadLevelSuccess(LevelPrefab: cc.Prefab, LoadedLevelNo: number) {
         console.log("Load Success");
         
@@ -96,14 +98,34 @@ export default class GameManager extends cc.Component {
         // currentLevel.position = cc.v3(0, 0, 0);
         this.currentLevelData = 1;
         this.loadmap = true;
+        this.player.active = true; 
+
+        // GameManager.instance.preloadLevelNext(this.reachLevel + 1);
+    }
+
+    OnFinishLevel(){
+        this.levelContainer.removeAllChildren();
+    }
+
+    nextLevel(){
+        this.LoadLevel(this.reachLevel+1);
+    }
+
+    returnLevel(){
+        this.LoadLevel(this.reachLevel);
+        this.loadState = LoadLevelState.NONE;
+    }
+
+    preloadLevelNext(LevelNo: number){
+        cc.resources.preload(`LevelPrefab/Level${LevelNo}`);
     }
 
     //#endregion LOAD LEVEL
     
     
     update (dt) {
-        if(this.loadmap === true){
-            this.player.active = true;
-        }
+        // if(this.loadmap === true){
+        //     this.player.active = true;
+        // }
     }
 }

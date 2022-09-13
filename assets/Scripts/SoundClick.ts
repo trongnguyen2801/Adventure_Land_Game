@@ -8,11 +8,11 @@ export default class SoundClick extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        AudioSource.intance.play();
+        AudioSource.instance.play();
     }
 
     click(){
-        AudioSource.intance.clickAudio();
+        AudioSource.instance.clickAudio();
     }
 
     start () {

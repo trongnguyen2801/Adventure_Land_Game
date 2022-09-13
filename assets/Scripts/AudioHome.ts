@@ -16,10 +16,10 @@ export default class AudioSource extends cc.Component {
     @property(cc.SpriteFrame)
     offSound:cc.SpriteFrame = null;
 
-    public static intance: AudioSource;
+    public static instance: AudioSource;
 
     onLoad () {
-        AudioSource.intance = this;
+        AudioSource.instance = this;
 
         // this.play();
     }

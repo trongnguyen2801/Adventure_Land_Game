@@ -19,12 +19,15 @@ export default class Novus extends cc.Component {
     @property(cc.Prefab)
     iceArrow: cc.Prefab = null;
 
-    public static intance: Novus;
+    @property(cc.Prefab)
+    key:cc.Prefab = null;
+
+    public static instance: Novus;
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        Novus.intance = this;
+        Novus.instance = this;
         this.anim = this.getComponent(cc.Animation);
         this.anim.play('novusidle');
         this.hp = 6;
@@ -50,6 +53,15 @@ export default class Novus extends cc.Component {
             this.hp -= 2;
             this.anim.play(AnimationState.HIT);
         }
+    }
+
+    spawnKey(i){
+        let key = cc.instantiate(this.key);
+        key.parent = this.node.parent;
+        let pos = this.node.getPosition();
+        pos.x+= 20;
+        pos.y += 20;
+        key.setPosition(pos);
     }
 
     comboAttackLeft(num){
@@ -194,5 +206,10 @@ export default class Novus extends cc.Component {
         }
     }
 
-    // update (dt) {}
+    update (dt) {
+        if(this.hp < 0 || this.hp == 0){
+            this.spawnKey(1);
+            this.node.destroy();
+        }
+    }
 }
